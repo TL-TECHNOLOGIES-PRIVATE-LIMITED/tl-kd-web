@@ -26,6 +26,118 @@
 
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    .body_text {
+      color: black;
+      text-shadow: 0.5px 0.5px #1e1e1e;
+      text-align: justify;
+    }
+
+    .menu-item {
+      text-shadow: 0.5px 0.5px #1e1e1e;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 5px;
+    }
+
+    #about_us {
+      background-image: url('./images/ABOUT\ US\ B\ copy.jpg');
+    }
+
+    #nav_bar {
+      box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    #button-19 {
+      appearance: button;
+      background-color: #d61818;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: din-round, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      line-height: 20px;
+      margin-left: 10px;
+      outline: none;
+      overflow: visible;
+      padding: 13px 16px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    #button-19:after {
+      background-clip: padding-box;
+      background-color: #ffa500;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+
+    }
+
+    #button-19:main,
+    #button-19:focus {
+      user-select: auto;
+    }
+
+    #button-19:hover:not(:disabled) {
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+
+    #button-19:disabled {
+      cursor: auto;
+    }
+
+
+    @media (min-width:960px) {
+      .logo_img {
+        margin-top: -25px;
+      }
+
+      #navigation_bar {
+        margin-top: 40px;
+      }
+
+      #button-19 {
+        margin-top: -10px;
+      }
+    }
+
+    @media(max-width:959px) {
+      .logo_img {
+        margin-top: -15px;
+      }
+
+      #button-19 {
+        margin-top: -10px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+
 
 
   <!-- load the script for older ie version -->
@@ -38,7 +150,7 @@
 
 <body data-rsssl="1" class="home page-template-default page page-id-3720 _masterslider _msp_version_3.2.2  header-style-1">
   <div class="body-wrapper  float-menu gdlr-icon-dark" data-home="https://demo.goodlayers.com/hotelmaster/modern">
-    <header class="gdlr-header-wrapper">
+    <header class="gdlr-header-wrapper" id="nav_bar">
       <!-- top navigation -->
 
       <!-- logo -->
@@ -48,372 +160,37 @@
           <div class="gdlr-logo">
             <div class="gdlr-logo-inner">
               <a href="index.html">
-                <img src="upload\logo.png" alt=""> </a>
+                <img src="upload\logo.png" alt="" width="380" height="83" class="logo_img"> </a>
               <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
-                <button class="dl-trigger">Open Menu</button>
-                <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
-                  <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                  <li><a href="about-us.html">About Us</a>
-                    <ul>
-
-                      <!-- <li class="menu-item"><a href="about-us.html">About Us</a></li> -->
-                      <!-- <li class="menu-item"><a href="contact-page.html">Contact Page 1</a></li> -->
-                      <!-- <li><a href="contact-page-2.html">Contact Us</a></li> -->
-                      <!-- <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns-no-space.html">Portfolio</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns.html">Portfolio Classic</a>
-                            <ul class="dl-submenu">
-                              <li class="menu-item"><a href="portfolio-grid-1-column.html">Portfolio Grid 1 Column (Both Sidebar)</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-2-columns.html">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-3-columns.html">Portfolio Grid 3 Columns</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-4-columns.html">Portfolio Grid 4 Columns</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-2-columns-no-space.html">Portfolio Grid 2 Columns, No Space</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-3-columns-no-space.html">Portfolio Grid 3 Columns, No Space</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-4-columns-no-space.html">Portfolio Grid 4 Columns, No Space</a></li>
-                            </ul>
-                          </li>
-                          <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns.html">Portfolio Modern</a>
-                            <ul class="dl-submenu">
-                              <li class="menu-item"><a href="portfolio-modern-3-columns.html">Portfolio Modern 3 Columns</a></li>
-                              <li class="menu-item"><a href="portfolio-modern-4-columns.html">Portfolio Modern 4 Columns</a></li>
-                              <li class="menu-item"><a href="portfolio-modern-3-columns-no-space.html">Portfolio Modern 3 Columns, No Space</a></li>
-                              <li class="menu-item"><a href="portfolio-modern-4-columns-no-space.html">Portfolio Modern 4 Columns, No Space</a></li>
-                            </ul>
-                          </li>
-                          <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio With Filter</a>
-                            <ul class="dl-submenu">
-                              <li class="menu-item"><a href="portfolio-grid-1-columns-with-filter.html">Portfolio Grid 1 Col With Filter</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-2-columns-with-filter.html">Portfolio Grid 2 Cols With Filter</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-3-columns-with-filter.html">Portfolio Grid 3 Cols With Filter</a></li>
-                              <li class="menu-item"><a href="portfolio-grid-4-columns-with-filter.html">Portfolio Grid 4 Cols With Filter</a></li>
-                              <li class="menu-item"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio Modern 3 Cols With Filter</a></li>
-                              <li class="menu-item"><a href="portfolio-modern-4-columns-with-filter.html">Portfolio Modern 4 Cols With Filter</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li> -->
-                      <!-- <li class="menu-item"><a href="404error.html">404 Page</a></li> -->
-                      <!-- <li class="menu-item"><a href="testimonial.html">Testimonial</a></li> -->
-                      <!-- <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html">Cabs</a> -->
-                      <!-- <ul class="dl-submenu">
-                          <li class="menu-item"><a href="gallery-2-columns-without-caption.html">Gallery 2 Columns Without Caption</a></li>
-                          <li class="menu-item"><a href="gallery-2-columns-with-caption.html">Gallery 2 Columns With Caption</a></li>
-                          <li class="menu-item"><a href="gallery-3-columns-without-caption.html">Gallery 3 Columns Without Caption</a></li>
-                          <li class="menu-item"><a href="gallery-3-columns-with-caption.html">Gallery 3 Columns With Caption</a></li>
-                          <li class="menu-item"><a href="gallery-4-columns-without-caption.html">Gallery 4 Columns Without Caption</a></li>
-                          <li class="menu-item"><a href="gallery-4-columns-with-caption.html">Gallery 4 Columns With Caption</a></li>
-                          <li class="menu-item"><a href="gallery-5-columns-without-caption.html">Gallery 5 Columns Without Caption</a></li>
-                          <li class="menu-item"><a href="gallery-5-columns-with-caption.html">Gallery 5 Columns With Caption</a></li>
-                        </ul> -->
-                  </li>
-                </ul>
-                </li>
-                <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html">Gallery</a>
-                  <!-- <li class="menu-item menu-item-has-children"><a href="#">Branches</a>
-                    <ul class="dl-submenu">
-                      <li class="menu-item"><a href="paris-branch.html">Paris Branch</a></li>
-                      <li class="menu-item"><a href="new-york-branch.html">New York Branch</a></li>
-                      <li class="menu-item"><a href="london.html">London</a></li>
-                    </ul>
-                  </li> -->
-                <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="room-classic-3-columns.html" class="sf-with-ul-pre">Getaway Tours </a>
-                  <!-- <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html">Rooms</a>
-                  <ul class="dl-submenu">
-                    <li class="menu-item menu-item-has-children"><a href="room-modern-3-columns.html">Room Modern</a>
-                      <ul class="dl-submenu">
-                        <li class="menu-item"><a href="room-modern-1-column.html">Room Modern 1 Column</a></li>
-                        <li class="menu-item"><a href="room-modern-2-columns.html">Room Modern 2 Columns</a></li>
-                        <li class="menu-item"><a href="room-modern-3-columns.html">Room Modern 3 Columns</a></li>
-                        <li class="menu-item"><a href="room-modern-4-columns-2.html">Room Modern 4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a>
-                      <ul class="dl-submenu">
-                        <li class="menu-item"><a href="room-classic-1-column.html">Room Classic 1 Column</a></li>
-                        <li class="menu-item"><a href="room-classic-2-columns.html">Room Classic 2 Columns</a></li>
-                        <li class="menu-item"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a></li>
-                        <li class="menu-item"><a href="room-classic-4-columns.html">Room Classic 4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item"><a href="room-modern-4-columns.html">Room Medium Thumbnail</a></li>
-                    <li class="menu-item"><a href="superior-room-two-double-beds.html">Rooms Single</a></li>
-                  </ul>
-                </li> -->
-                  <!-- <li class="menu-item"><a href="booking.html">Reservation</a></li> -->
-
-                  <!-- <li class="menu-item menu-item-has-children"><a href="blog-full-with-right-sidebar.html">Blog</a> -->
-                <li class="menu-item menu-item-has-children"><a href="blog-3-columns.html">Honeymoon</a>
-                  <!-- <ul class="dl-submenu">
-                      <li class="menu-item menu-item-has-children"><a href="#">Blog Full</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="blog-full-with-right-sidebar.html">Blog Full With Right Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-full-with-left-sidebar.html">Blog Full With Left Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-full-with-both-sidebar.html">Blog Full With Both Sidebar</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Blog Column</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="blog-1-column.html">Blog 1 Column (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-3-columns.html">Blog 3 Columns</a></li>
-                          <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Blog Masonry</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="blog-2-columns-masonry.html">Blog 2 Columns &#8211; Masonry (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-3-columns-masonry.html">Blog 3 Columns &#8211; Masonry</a></li>
-                          <li class="menu-item"><a href="blog-4-columns-masonry.html">Blog 4 Columns &#8211; Masonry</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Blog Medium</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="blog-medium-with-right-sidebar.html">Blog Medium With Right Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-with-left-sidebar.html">Blog Medium With Left Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-with-both-sidebar.html">Blog Medium With Both Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-without-sidebar.html">Blog Medium Without Sidebar</a></li>
-                        </ul>
-                      </li>
-                    </ul> -->
-                </li>
-                <!-- <li class="menu-item menu-item-has-children"><a href="typography.html">Shortcodes</a>
-                    <ul class="dl-submenu">
-                      <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 1</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="accordiontoggle-box.html">Accordion/Toggle Box</a></li>
-                          <li class="menu-item"><a href="audio-shortcode.html">Audio Shortcode</a></li>
-                          <li class="menu-item"><a href="button.html">Button</a></li>
-                          <li class="menu-item"><a href="column-shortcode.html">Column Shortcode</a></li>
-                          <li class="menu-item"><a href="divider.html">Divider</a></li>
-                          <li class="menu-item"><a href="gallery-shortcode.html">Gallery Shortcode</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 2</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="heading-tag.html">Heading Tag</a></li>
-                          <li class="menu-item"><a href="icons-icon-boxes.html">icons &#038; icon boxes</a></li>
-                          <li class="menu-item"><a href="lightbox-frames.html">Lightbox &#038; Frames</a></li>
-                          <li class="menu-item"><a href="notification-boxes.html">Notification Boxes</a></li>
-                          <li class="menu-item"><a href="personnel.html">Personnel</a></li>
-                          <li class="menu-item"><a href="post-slider.html">Post Slider</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 3</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="price-table.html">Price Table</a></li>
-                          <li class="menu-item"><a href="process.html">Process</a></li>
-                          <li class="menu-item"><a href="progress-circle.html">Progress Circle</a></li>
-                          <li class="menu-item"><a href="skills.html">Skills</a></li>
-                          <li class="menu-item"><a href="slider-shortcode.html">Slider Shortcode</a></li>
-                          <li class="menu-item"><a href="space.html">Space</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 4</a>
-                        <ul class="dl-submenu">
-                          <li class="menu-item"><a href="styled-box.html">Styled Box</a></li>
-                          <li class="menu-item"><a href="stunning-text.html">Stunning Text</a></li>
-                          <li class="menu-item"><a href="table.html">Table</a></li>
-                          <li class="menu-item"><a href="tabs.html">Tabs</a></li>
-                          <li class="menu-item"><a href="testimonial-2.html">Testimonial &#038; Quote</a></li>
-                          <li class="menu-item"><a href="typography.html">Typography</a></li>
-                          <li class="menu-item"><a href="video.html">Video</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> -->
+                <button class="dl-trigger" style="border-radius: 5px;">Open Menu</button>
+                <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu" style="border-radius: 5px;">
+                  <li class="menu-item"><a href="index.html">Home</a></li>
+                  <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                  <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                  <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
+                  <li class="menu-item"><a href="blog-3-columns.html">Honeymoon</a></li>
+                  <li class="menu-item"><a href="index.html">For Enquiry</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
           <!-- navigation -->
-          <div class="gdlr-navigation-wrapper">
+          <div class="gdlr-navigation-wrapper" id="navigation_bar">
             <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
               <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="about-us.html" class="sf-with-ul-pre">About Us</a>
-                  <ul>
-                    <!-- <li class="menu-item"><a href="about-us.html">About Us</a></li> -->
-                    <!-- <li class="menu-item"><a href="contact-page.html">Contact Page 1</a></li> -->
-                    <!-- <li><a href="contact-page-2.html">Contact Us</a></li> -->
-                    <!-- <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns-no-space.html" class="sf-with-ul-pre">Portfolio</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns.html" class="sf-with-ul-pre">Portfolio Classic</a>
-                          <ul class="sub-menu">
-                            <li class="menu-item"><a href="portfolio-grid-1-column.html">Portfolio Grid 1 Column (Both Sidebar)</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-2-columns.html">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-3-columns.html">Portfolio Grid 3 Columns</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-4-columns.html">Portfolio Grid 4 Columns</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-2-columns-no-space.html">Portfolio Grid 2 Columns, No Space</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-3-columns-no-space.html">Portfolio Grid 3 Columns, No Space</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-4-columns-no-space.html">Portfolio Grid 4 Columns, No Space</a></li>
-                          </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns.html" class="sf-with-ul-pre">Portfolio Modern</a>
-                          <ul class="sub-menu">
-                            <li class="menu-item"><a href="portfolio-modern-3-columns.html">Portfolio Modern 3 Columns</a></li>
-                            <li class="menu-item"><a href="portfolio-modern-4-columns.html">Portfolio Modern 4 Columns</a></li>
-                            <li class="menu-item"><a href="portfolio-modern-3-columns-no-space.html">Portfolio Modern 3 Columns, No Space</a></li>
-                            <li class="menu-item"><a href="portfolio-modern-4-columns-no-space.html">Portfolio Modern 4 Columns, No Space</a></li>
-                          </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns-with-filter.html" class="sf-with-ul-pre">Portfolio With Filter</a>
-                          <ul class="sub-menu">
-                            <li class="menu-item"><a href="portfolio-grid-1-columns-with-filter.html">Portfolio Grid 1 Col With Filter</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-2-columns-with-filter.html">Portfolio Grid 2 Cols With Filter</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-3-columns-with-filter.html">Portfolio Grid 3 Cols With Filter</a></li>
-                            <li class="menu-item"><a href="portfolio-grid-4-columns-with-filter.html">Portfolio Grid 4 Cols With Filter</a></li>
-                            <li class="menu-item"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio Modern 3 Cols With Filter</a></li>
-                            <li class="menu-item"><a href="portfolio-modern-4-columns-with-filter.html">Portfolio Modern 4 Cols With Filter</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li> -->
-                    <!-- <li class="menu-item"><a href="404error.html">404 Page</a></li> -->
-                    <!-- <li class="menu-item"><a href="testimonial.html">Testimonial</a></li> -->
-                    <!-- <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html" class="sf-with-ul-pre">Cabs</a> -->
-                    <!-- <ul class="sub-menu">
-                        <li class="menu-item"><a href="gallery-2-columns-without-caption.html">Gallery 2 Columns Without Caption</a></li>
-                        <li class="menu-item"><a href="gallery-2-columns-with-caption.html">Gallery 2 Columns With Caption</a></li>
-                        <li class="menu-item"><a href="gallery-3-columns-without-caption.html">Gallery 3 Columns Without Caption</a></li>
-                        <li class="menu-item"><a href="gallery-3-columns-with-caption.html">Gallery 3 Columns With Caption</a></li>
-                        <li class="menu-item"><a href="gallery-4-columns-without-caption.html">Gallery 4 Columns Without Caption</a></li>
-                        <li class="menu-item"><a href="gallery-4-columns-with-caption.html">Gallery 4 Columns With Caption</a></li>
-                        <li class="menu-item"><a href="gallery-5-columns-without-caption.html">Gallery 5 Columns Without Caption</a></li>
-                        <li class="menu-item"><a href="gallery-5-columns-with-caption.html">Gallery 5 Columns With Caption</a></li>
-                      </ul> -->
-
-                </li>
-              </ul>
-              </li>
-              <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html">Gallery</a>
-                <!-- <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="#" class="sf-with-ul-pre">Branches</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item"><a href="paris-branch.html">Paris Branch</a></li>
-                    <li class="menu-item"><a href="new-york-branch.html">New York Branch</a></li>
-                    <li class="menu-item"><a href="london.html">London</a></li>
-                  </ul>
-                </li> -->
-              <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="room-classic-3-columns.html" class="sf-with-ul-pre">Getaway Tours </a>
-                <!-- <ul class="sub-menu">
-                    <li class="menu-item menu-item-has-children"><a href="room-modern-3-columns.html" class="sf-with-ul-pre">Room Modern</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item"><a href="room-modern-1-column.html">Room Modern 1 Column</a></li>
-                        <li class="menu-item"><a href="room-modern-2-columns.html">Room Modern 2 Columns</a></li>
-                        <li class="menu-item"><a href="room-modern-3-columns.html">Room Modern 3 Columns</a></li>
-                        <li class="menu-item"><a href="room-modern-4-columns-2.html">Room Modern 4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html" class="sf-with-ul-pre">Room Classic 3 Columns</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item"><a href="room-classic-1-column.html">Room Classic 1 Column</a></li>
-                        <li class="menu-item"><a href="room-classic-2-columns.html">Room Classic 2 Columns</a></li>
-                        <li class="menu-item"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a></li>
-                        <li class="menu-item"><a href="room-classic-4-columns.html">Room Classic 4 Columns</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item"><a href="room-modern-4-columns.html">Room Medium Thumbnail</a></li>
-                    <li class="menu-item"><a href="superior-room-two-double-beds.html">Rooms Single</a></li>
-                  </ul> -->
-              </li>
-              <!-- <li class="menu-itemmenu-item gdlr-normal-menu"><a href="booking.html">Reservation</a></li> -->
-              <li class="menu-item menu-item-has-children gdlr-mega-menu"><a href="blog-3-columns.html" class="sf-with-ul-pre">Honeymoon</a>
-                <!-- <div class="sf-mega">
-                    <ul class="sub-menu">
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Blog Full</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="blog-full-with-right-sidebar.html">Blog Full With Right Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-full-with-left-sidebar.html">Blog Full With Left Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-full-with-both-sidebar.html">Blog Full With Both Sidebar</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Blog Column</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="blog-1-column.html">Blog 1 Column (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-3-columns.html">Blog 3 Columns</a></li>
-                          <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Blog Masonry</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="blog-2-columns-masonry.html">Blog 2 Columns &#8211; Masonry (Right Sidebar)</a></li>
-                          <li class="menu-item"><a href="blog-3-columns-masonry.html">Blog 3 Columns &#8211; Masonry</a></li>
-                          <li class="menu-item"><a href="blog-4-columns-masonry.html">Blog 4 Columns &#8211; Masonry</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Blog Medium</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="blog-medium-with-right-sidebar.html">Blog Medium With Right Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-with-left-sidebar.html">Blog Medium With Left Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-with-both-sidebar.html">Blog Medium With Both Sidebar</a></li>
-                          <li class="menu-item"><a href="blog-medium-without-sidebar.html">Blog Medium Without Sidebar</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div> -->
-              </li>
-
-
-
-              <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right; font-style: normal !important;"><a href="#" target="_self" style="color:white; background-color: orange; border-radius: 20px; padding: 15px 25px; margin-top: -15px;">
-
-                  <span>For Enquiry</span>
-                </a></li>
-
-
-              <!-- <li class="menu-item menu-item-has-children gdlr-mega-menu"><a href="typography.html" class="sf-with-ul-pre">Shortcodes</a>
-                  <div class="sf-mega">
-                    <ul class="sub-menu">
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 1</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="accordiontoggle-box.html">Accordion/Toggle Box</a></li>
-                          <li class="menu-item"><a href="audio-shortcode.html">Audio Shortcode</a></li>
-                          <li class="menu-item"><a href="button.html">Button</a></li>
-                          <li class="menu-item"><a href="column-shortcode.html">Column Shortcode</a></li>
-                          <li class="menu-item"><a href="divider.html">Divider</a></li>
-                          <li class="menu-item"><a href="gallery-shortcode.html">Gallery Shortcode</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 2</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="heading-tag.html">Heading Tag</a></li>
-                          <li class="menu-item"><a href="icons-icon-boxes.html">icons &#038; icon boxes</a></li>
-                          <li class="menu-item"><a href="lightbox-frames.html">Lightbox &#038; Frames</a></li>
-                          <li class="menu-item"><a href="notification-boxes.html">Notification Boxes</a></li>
-                          <li class="menu-item"><a href="personnel.html">Personnel</a></li>
-                          <li class="menu-item"><a href="post-slider.html">Post Slider</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 3</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="price-table.html">Price Table</a></li>
-                          <li class="menu-item"><a href="process.html">Process</a></li>
-                          <li class="menu-item"><a href="progress-circle.html">Progress Circle</a></li>
-                          <li class="menu-item"><a href="skills.html">Skills</a></li>
-                          <li class="menu-item"><a href="slider-shortcode.html">Slider Shortcode</a></li>
-                          <li class="menu-item"><a href="space.html">Space</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 4</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item"><a href="styled-box.html">Styled Box</a></li>
-                          <li class="menu-item"><a href="stunning-text.html">Stunning Text</a></li>
-                          <li class="menu-item"><a href="table.html">Table</a></li>
-                          <li class="menu-item"><a href="tabs.html">Tabs</a></li>
-                          <li class="menu-item"><a href="testimonial-2.html">Testimonial &#038; Quote</a></li>
-                          <li class="menu-item"><a href="typography.html">Typography</a></li>
-                          <li class="menu-item"><a href="video.html">Video</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </li> -->
+                <li class="menu-item"><a href="index.html" style="padding-bottom: 5px;">Home</a></li>
+                <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
+                <li class="menu-item"><a href="index.html">Honeymoon</a></li>
+                <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a class="gdlr-button medium" href="#" target="_self" id="button-19">For
+                    Enquiry</a></li>
               </ul>
             </nav>
-            <!-- <span class="gdlr-menu-search-button-sep">•</span> -->
-            <!-- <i class="fa fa-search icon-search gdlr-menu-search-button" id="gdlr-menu-search-button"></i> -->
-            <!-- <div class="gdlr-menu-search" id="gdlr-menu-search">
+            <span class="gdlr-menu-search-button-sep">•</span>
+            <i class="fa fa-search icon-search gdlr-menu-search-button" id="gdlr-menu-search-button"></i>
+            <div class="gdlr-menu-search" id="gdlr-menu-search">
               <form method="get" id="searchform" action="https://demo.goodlayers.com/hotelmaster/modern/">
                 <div class="search-text">
                   <input type="text" value="Type Keywords" name="s" autocomplete="off" data-default="Type Keywords">
@@ -421,7 +198,7 @@
                 <input type="submit" value="">
                 <div class="clear"></div>
               </form>
-            </div> -->
+            </div>
             <div class="gdlr-navigation-gimmick" id="gdlr-navigation-gimmick"></div>
             <div class="clear"></div>
           </div>
@@ -450,7 +227,7 @@
                   <div id="MS5af40caed4ee6" class="master-slider ms-skin-default">
 
                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src=" upload/Kerala drives.png">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src=" upload/kerala drives (2).png">
 
                       <!-- <div class=" ms-layer msp-cn-5-10" style="" data-duration="862" data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-122" data-origin="mc" data-position="normal">
                       This is the best
@@ -483,26 +260,26 @@
 
                     </div> -->
                     <div class="ms-slide" data-delay="3" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/slider-31.jpg">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/Untitled-1.png">
 
-                      <div class="ms-layer  msp-cn-1-5" data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="850" data-ease="easeOutQuint" data-offset-x="375" data-offset-y="14" data-origin="ml" data-position="normal">
+                      <!-- <div class="ms-layer  msp-cn-1-5" data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="850" data-ease="easeOutQuint" data-offset-x="375" data-offset-y="14" data-origin="ml" data-position="normal">
                         Enjoy</div>
 
                       <div class="ms-layer  msp-cn-1-6" data-duration="937" data-delay="525" data-ease="easeOutQuint" data-offset-x="33" data-offset-y="102" data-origin="ml" data-position="normal">
                         Spa Master</div>
 
                       <div class="ms-layer  msp-cn-1-7" data-duration="975" data-delay="1137" data-ease="easeOutQuint" data-offset-x="176" data-offset-y="176" data-origin="ml" data-position="normal">
-                        The Finest Spa On Earth</div>
+                        The Finest Spa On Earth</div> -->
 
                     </div>
                     <div class="ms-slide" data-delay="3" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/slider-21.jpg">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/Untitled-2.png">
 
-                      <div class="ms-layer  msp-cn-1-8" data-effect="t(true,n,150,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="1212" data-ease="easeOutQuint" data-offset-x="28" data-offset-y="157" data-origin="bl" data-position="normal">
+                      <!-- <div class="ms-layer  msp-cn-1-8" data-effect="t(true,n,150,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="1212" data-ease="easeOutQuint" data-offset-x="28" data-offset-y="157" data-origin="bl" data-position="normal">
                         Perfect Place For Dining</div>
 
                       <div class="ms-layer  msp-cn-1-9" style="width:509px;" data-delay="937" data-ease="easeOutQuint" data-offset-x="30" data-offset-y="88" data-origin="bl" data-position="normal">
-                        Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes.</div>
+                        Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes.</div> -->
 
                     </div>
 
@@ -625,7 +402,8 @@
                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                   <div class="gdlr-item-title-head">
                     <h3 class=" gdlr-skin-title gdlr-skin-border">BEST DEALS</h3>
-                    <p>Morbi leo risus, porta ac consectetur ac, vesti bulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p>Looking for your next travel destination? You've come to the right place!
+                      We offer a wide variety of destinations and experiences to suit every taste and budget. From beach getaways to cultural explorations, we've got you covered.</p>
                     <div class="clear"></div>
                   </div>
                 </div>
@@ -635,7 +413,7 @@
                       <div class="clear"></div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 1.png" alt="" width="600" height="334">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image 1.png" alt="" width="600" height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -644,7 +422,7 @@
                       </div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 2.png" alt="" width="600" height="334">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image.png" alt="" width="600" height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -653,7 +431,7 @@
                       </div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 3.png" alt="" width="600" height="334">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 3.png" alt="" width="600" height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -674,7 +452,7 @@
           </section>
 
           <section id="content-section-4">
-            <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-1" style="background-image: url('upload/kd 5.png'); padding-top: 135px; padding-bottom: 80px; ">
+            <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-1" style="background-image: url('upload/Group 3796.png'); padding-top: 135px; padding-bottom: 80px; ">
               <div class="container" style="display: flex;">
                 <div class="six columns" style="flex-basis: 33.33%;">
                   <div className="col-md-4">
@@ -683,7 +461,7 @@
                         <span className="intro-count">01</span>
                         <Link className="intro-cat" to="/about">Travel</Link>
                       </h4>
-                      <p>Sponsorships are like unicorns or leprechauns, talked about often but they don’t actually exist. There is only dollars and cents, the ...</p>
+                      <p>Get ready to experience the world like never before with our curated travel packages. Explore new destinations, cultures, and cuisines with our expertly crafted itineraries.</p>
                     </div>
                   </div>
                 </div>
@@ -702,7 +480,7 @@
                           <span className="intro-count">02</span>
                           <Link className="intro-cat" to="/about">Experience</Link>
                         </h4>
-                        <p>Sponsorships are like unicorns or leprechauns, talked about often but they don’t actually exist. There is only dollars and cents, the ...</p>
+                        <p>Join us on an adventure off the beaten path and discover breathtaking landscapes, unique wildlife, and ancient cultures. Discover the hidden gems with us!</p>
                       </div>
                     </div>
                     <div class="clear"></div>
@@ -717,7 +495,7 @@
                         <Link className="intro-cat" to="/about"> Relax</Link>
 
                       </h4>
-                      <p>Sponsorships are like unicorns or leprechauns, talked about often but they don’t actually exist. There is only dollars and cents, the ...</p>
+                      <p>Indulge in a luxurious spa getaway, where you can unwind, rejuvenate, and pamper yourself. Choose from our range of relaxing packages, and let our expert therapists take care of you.</p>
                     </div>
                   </div>
                 </div>
@@ -798,8 +576,8 @@
                         <div class="gdlr-ux gdlr-blog-medium-ux">
                           <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
-                              <div class="gdlr-blog-thumbnail">
-                                <a href="#"> <img src="upload\kd 7.png" alt="" width="700" height="400"></a>
+                              <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
+                                <a href="#"> <img src="upload\kd 7.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
                               </div>
                               <!-- <div class="blog-date-wrapper gdlr-title-font">
                                 <span class="blog-date-day">3</span>
@@ -844,8 +622,8 @@
                         <div class="gdlr-ux gdlr-blog-medium-ux">
                           <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                             <div class="gdlr-standard-style">
-                              <div class="gdlr-blog-thumbnail">
-                                <a href="#"> <img src="upload\kd 6.png" alt="" width="700" height="400"></a>
+                              <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
+                                <a href="#"> <img src="upload\kd 6.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
                               </div>
 
 
@@ -885,8 +663,8 @@
                         <div class="gdlr-ux gdlr-blog-medium-ux">
                           <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
-                              <div class="gdlr-blog-thumbnail">
-                                <a href="#"> <img src="upload\kd 8.png" alt="" width="700" height="400"></a>
+                              <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
+                                <a href="#"> <img src="upload\kd 8.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
                               </div>
                               <!-- <div class="blog-date-wrapper gdlr-title-font">
                                 <span class="blog-date-day">3</span>
@@ -958,34 +736,20 @@
                   <div class="gdlr-gallery-item gdlr-item">
                     <div class="gallery-column eight columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 9.png" alt="" width="400" height="400"></a>
+                        <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 9.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
                       </div>
                     </div>
                     <div class="gallery-column four columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-1231437-tropical-pool-bar-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 10.png" alt="" width="400" height="400"></a>
+                        <a href="upload\photodune-1231437-tropical-pool-bar-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 10.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
                       </div>
                     </div>
                     <div class="gallery-column four columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-1576481-relaxing-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\photodune-1576481-relaxing-m1-400x400.jpg" alt="" width="400" height="400"></a>
+                        <a href="upload\photodune-1576481-relaxing-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\home page gallery 1.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
                       </div>
                     </div>
-                    <div class="gallery-column four columns">
-                      <div class="gallery-item">
-                        <a href="upload\photodune-2650397-sailing-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\photodune-2650397-sailing-m1-400x400.jpg" alt="" width="400" height="400"></a>
-                      </div>
-                    </div>
-                    <div class="gallery-column four columns">
-                      <div class="gallery-item">
-                        <a href="upload\photodune-4076311-interior-of-modern-comfortable-hotel-room-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\photodune-4076311-interior-of-modern-comfortable-hotel-room-m1-400x400.jpg" alt="" width="400" height="400"></a>
-                      </div>
-                    </div>
-                    <div class="gallery-column four columns">
-                      <div class="gallery-item">
-                        <a href="upload\photodune-3973259-hotel-room-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\photodune-3973259-hotel-room-m1-400x400.jpg" alt="" width="400" height="400"></a>
-                      </div>
-                    </div>
+
                     <!-- <div class="gallery-column four columns">
                       <div class="gallery-item">
                         <a href="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m1-400x400.jpg" alt="" width="400" height="400"></a>
@@ -1030,26 +794,42 @@
                       <ul class="slides">
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Nul id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>" We were extremely satisfied with Kerala Drives. Mr. Sajan, the owner, proved to be very courteous and helpful from the beginning, striving to organize the best and most memorable Tamil Nadu and Kerala trips for us. The drivers were very friendly, and the accommodations were simply superb. I highly recommend Kerala Drives to turn your trip into an unforgettable experience! "</p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Angelina Cole</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
-                          </div>
-                        </li>
-                        <li class="testimonial-item">
-                          <div class="testimonial-content gdlr-skin-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Nul id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta.</p>
-                          </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">John Smith</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Businesman</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Daniel </span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
                           </div>
                         </li>
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Nul id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare leo.</p>
+                            <p>" I want to thank Kerala Drives for providing a safe and comfortable trip. Our driver, Afsal, was incredibly friendly and made us feel like part of the family. I also want to extend my thanks to the owner, Mr. Sajan, for his exceptional service."</p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Pam Pamelar</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Nagul Nandhan</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Businesman</span>
+                          </div>
+                        </li>
+                        <li class="testimonial-item">
+                          <div class="testimonial-content gdlr-skin-content">
+                            <p>"I want to express my gratitude to Kerala Drives for arranging such a wonderful and memorable trip for us. I also want to thank Pradeep, our driver, for his excellent driving skills and for taking care of us throughout the journey. We really enjoyed the trip and appreciate the great service."</p>
+                          </div>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Sai Kumar</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
                           </div>
                         </li>
 
+                        <li class="testimonial-item">
+                          <div class="testimonial-content gdlr-skin-content">
+                            <p>"We spent our time very wisely. Thanks to Kerala Drives for all the planning & arrangements. "</p>
+                          </div>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Kishor Kumar</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          </div>
+                        </li>
+
+
+                        <li class="testimonial-item">
+                          <div class="testimonial-content gdlr-skin-content">
+                            <p>"Travelled safely with Kerala Drives. We feel very comfortable. We highly recommend it. "</p>
+                          </div>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Vijay V</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          </div>
+                        </li>
 
                       </ul>
                     </div>
@@ -1120,13 +900,13 @@
           <div class="clear"></div>
           <ul>
             <li>
-              <a href="#" style="color:white">Home</a>
+              <a href="index.html" style="color:white">Home</a>
             </li>
             <li>
-              <a href="#" style="color:white">About Us</a>
+              <a href="about-us.html" style="color:white">About Us</a>
             </li>
             <li>
-              <a href="#" style="color:white">Gallery</a>
+              <a href="gallery-3-columns-with-caption.html" style="color:white">Gallery</a>
             </li>
             <li>
               <a href="#" style="color:white">Getaway Tours</a>
