@@ -4209,7 +4209,7 @@ ul.gdlr-twitter-widget li .gdlr-twitter {
   border-top-width: 0px;
 }
 .gdlr-woocommerce-cart .sub-menu-item .head {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .gdlr-woocommerce-cart .gdlr-button {
   margin-bottom: 0px;
