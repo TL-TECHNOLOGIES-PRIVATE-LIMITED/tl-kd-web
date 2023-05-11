@@ -21,7 +21,8 @@
   <link rel='stylesheet' href='plugins\flexslider\flexslider.css' type='text/css' media='all'>
   <link rel='stylesheet' href='css\style-responsive.css' type='text/css' media='all'>
   <link rel='stylesheet' href='css\style-custom.css' type='text/css' media='all'>
-  <link rel='stylesheet' href='plugins\masterslider\public\assets\css\masterslider.main.css' type='text/css' media='all'>
+  <link rel='stylesheet' href='plugins\masterslider\public\assets\css\masterslider.main.css' type='text/css'
+    media='all'>
   <link rel='stylesheet' href='css\custom.css?ver=2.6' type='text/css' media='all'>
 
 
@@ -29,8 +30,9 @@
   <style>
     .body_text {
       color: black;
-      text-shadow: 0.5px 0.5px #1e1e1e;
+      /* text-shadow: 0.5px 0.5px #302f2f; */
       text-align: justify;
+      font-weight: bold;
     }
 
     .menu-item {
@@ -40,7 +42,8 @@
     }
 
     #about_us {
-      background-image: url('./images/ABOUT\ US\ B\ copy.jpg');
+      background-image: url('./images/ABOUT\ US\ BANNER.jpg');
+      background-position: -100px;
     }
 
     #nav_bar {
@@ -49,6 +52,7 @@
       -moz-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
     }
 
+
     #button-19 {
       appearance: button;
       background-color: #d61818;
@@ -56,7 +60,7 @@
       border-radius: 16px;
       border-width: 0 0 4px;
       box-sizing: border-box;
-      color: #FFFFFF;
+      color: #1f1e1e;
       cursor: pointer;
       display: inline-block;
       font-family: din-round, sans-serif;
@@ -110,10 +114,15 @@
       cursor: auto;
     }
 
+    #cabs :hover {
+      transform: scale(1.1);
+      transition: transform .2s ease-out;
+      cursor: pointer;
+    }
 
     @media (min-width:960px) {
       .logo_img {
-        margin-top: -25px;
+        margin-top: -10px;
       }
 
       #navigation_bar {
@@ -121,13 +130,14 @@
       }
 
       #button-19 {
-        margin-top: -10px;
+        margin-top: -15px;
       }
     }
 
     @media(max-width:959px) {
       .logo_img {
         margin-top: -15px;
+        /* margin-left:10px; */
       }
 
       #button-19 {
@@ -148,14 +158,15 @@
 
 </head>
 
-<body data-rsssl="1" class="home page-template-default page page-id-3720 _masterslider _msp_version_3.2.2  header-style-1">
+<body data-rsssl="1"
+  class="home page-template-default page page-id-3720 _masterslider _msp_version_3.2.2  header-style-1">
   <div class="body-wrapper  float-menu gdlr-icon-dark" data-home="https://demo.goodlayers.com/hotelmaster/modern">
     <header class="gdlr-header-wrapper" id="nav_bar">
       <!-- top navigation -->
 
       <!-- logo -->
       <div class="gdlr-header-inner">
-        <div class="gdlr-header-container container">
+        <div class="gdlr-header-container container" id="top_bar">
           <!-- logo -->
           <div class="gdlr-logo">
             <div class="gdlr-logo-inner">
@@ -164,28 +175,30 @@
               <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                 <button class="dl-trigger" style="border-radius: 5px;">Open Menu</button>
                 <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu" style="border-radius: 5px;">
-                  <li class="menu-item"><a href="index.html">Home</a></li>
+                  <li class="menu-item"><a href="/">Home</a></li>
                   <li class="menu-item"><a href="about-us.html">About Us</a></li>
                   <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                  <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
-                  <li class="menu-item"><a href="blog-3-columns.html">Honeymoon</a></li>
-                  <li class="menu-item"><a href="index.html">For Enquiry</a></li>
+                  <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                  <li class="menu-item"><a href="honeymoon.html">Honeymoon</a></li>
+                  <li class="menu-item"><a href="https://booking.keraladrives.com/">Booking</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
           <!-- navigation -->
-          <div class="gdlr-navigation-wrapper" id="navigation_bar">
+          <div class="gdlr-navigation-wrapper">
             <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
               <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                <li class="menu-item"><a href="index.html" style="padding-bottom: 5px;">Home</a></li>
+                <li class="menu-item"><a href="/">Home</a></li>
                 <li class="menu-item"><a href="about-us.html">About Us</a></li>
                 <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
-                <li class="menu-item"><a href="index.html">Honeymoon</a></li>
-                <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a class="gdlr-button medium" href="#" target="_self" id="button-19">For
-                    Enquiry</a></li>
+                <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                <li class="menu-item"><a href="honeymoon.html">Honeymoon</a></li>
+                <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a
+                    class="gdlr-button medium" href="https://booking.keraladrives.com/" target="blank"
+                    id="button-19">Booking</a>
+                </li>
               </ul>
             </nav>
             <span class="gdlr-menu-search-button-sep">•</span>
@@ -227,7 +240,8 @@
                   <div id="MS5af40caed4ee6" class="master-slider ms-skin-default">
 
                     <div class="ms-slide" data-delay="7" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src=" upload/kerala drives (2).png">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title=""
+                        data-src=" upload/kerala drives (2).png">
 
                       <!-- <div class=" ms-layer msp-cn-5-10" style="" data-duration="862" data-ease="easeOutQuint" data-offset-x="0" data-offset-y="-122" data-origin="mc" data-position="normal">
                       This is the best
@@ -260,7 +274,8 @@
 
                     </div> -->
                     <div class="ms-slide" data-delay="3" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/Untitled-1.png">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title=""
+                        data-src="upload/Untitled-1.png">
 
                       <!-- <div class="ms-layer  msp-cn-1-5" data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="850" data-ease="easeOutQuint" data-offset-x="375" data-offset-y="14" data-origin="ml" data-position="normal">
                         Enjoy</div>
@@ -273,7 +288,8 @@
 
                     </div>
                     <div class="ms-slide" data-delay="3" data-fill-mode="fill">
-                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title="" data-src="upload/Untitled-2.png">
+                      <img src="plugins\masterslider\public\assets\css\blank.gif" alt="" title=""
+                        data-src="upload/Untitled-2.png">
 
                       <!-- <div class="ms-layer  msp-cn-1-8" data-effect="t(true,n,150,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="1212" data-ease="easeOutQuint" data-offset-x="28" data-offset-y="157" data-origin="bl" data-position="normal">
                         Perfect Place For Dining</div>
@@ -397,13 +413,15 @@
 
 
           <section id="content-section-3">
-            <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 75px; ">
+            <div class="gdlr-color-wrapper  gdlr-show-all no-skin"
+              style="background-color: #ffffff; padding-top: 75px; ">
               <div class="container">
                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                   <div class="gdlr-item-title-head">
                     <h3 class=" gdlr-skin-title gdlr-skin-border">BEST DEALS</h3>
                     <p>Looking for your next travel destination? You've come to the right place!
-                      We offer a wide variety of destinations and experiences to suit every taste and budget. From beach getaways to cultural explorations, we've got you covered.</p>
+                      We offer a wide variety of destinations and experiences to suit every taste and budget. From beach
+                      getaways to cultural explorations, we've got you covered.</p>
                     <div class="clear"></div>
                   </div>
                 </div>
@@ -413,7 +431,8 @@
                       <div class="clear"></div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image 1.png" alt="" width="600" height="334" style="border-radius:5px ;">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image 1.png" alt=""
+                              width="600" height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -422,7 +441,8 @@
                       </div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image.png" alt="" width="600" height="334" style="border-radius:5px ;">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\Home page image.png" alt=""
+                              width="600" height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -431,7 +451,8 @@
                       </div>
                       <div class="four columns">
                         <div class="gdlr-item gdlr-room-category-item">
-                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 3.png" alt="" width="600" height="334" style="border-radius:5px ;">
+                          <div class="gdlr-room-category-thumbnail"><img src="upload\kd 3.png" alt="" width="600"
+                              height="334" style="border-radius:5px ;">
                             <div class="gdlr-room-category-thumbnail-overlay"></div>
                             <!-- <div class="gdlr-room-category-thumbnail-overlay-icon"><a href="#"><i class="fa fa-link icon-link"></i></a></div> -->
                           </div>
@@ -452,7 +473,9 @@
           </section>
 
           <section id="content-section-4">
-            <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-1" style="background-image: url('upload/Group 3796.png'); padding-top: 135px; padding-bottom: 80px; ">
+            <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
+              id="gdlr-parallax-wrapper-1"
+              style="background-image: url('upload/Group 3796.png'); padding-top: 135px; padding-bottom: 80px; ">
               <div class="container" style="display: flex;">
                 <div class="six columns" style="flex-basis: 33.33%;">
                   <div className="col-md-4">
@@ -461,7 +484,8 @@
                         <span className="intro-count">01</span>
                         <Link className="intro-cat" to="/about">Travel</Link>
                       </h4>
-                      <p>Get ready to experience the world like never before with our curated travel packages. Explore new destinations, cultures, and cuisines with our expertly crafted itineraries.</p>
+                      <p>Get ready to experience the world like never before with our curated travel packages. Explore
+                        new destinations, cultures, and cuisines with our expertly crafted itineraries.</p>
                     </div>
                   </div>
                 </div>
@@ -475,12 +499,14 @@
                   <div class="gdlr-item gdlr-service-with-image-item gdlr-left">
 
                     <div className="col-md-4">
-                      <div className="single-intro wow animated fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.1s">
+                      <div className="single-intro wow animated fadeInUp" data-wow-duration="0.6s"
+                        data-wow-delay="0.1s">
                         <h4 className="intro-title">
                           <span className="intro-count">02</span>
                           <Link className="intro-cat" to="/about">Experience</Link>
                         </h4>
-                        <p>Join us on an adventure off the beaten path and discover breathtaking landscapes, unique wildlife, and ancient cultures. Discover the hidden gems with us!</p>
+                        <p>Join us on an adventure off the beaten path and discover breathtaking landscapes, unique
+                          wildlife, and ancient cultures. Discover the hidden gems with us!</p>
                       </div>
                     </div>
                     <div class="clear"></div>
@@ -495,7 +521,8 @@
                         <Link className="intro-cat" to="/about"> Relax</Link>
 
                       </h4>
-                      <p>Indulge in a luxurious spa getaway, where you can unwind, rejuvenate, and pamper yourself. Choose from our range of relaxing packages, and let our expert therapists take care of you.</p>
+                      <p>Indulge in a luxurious spa getaway, where you can unwind, rejuvenate, and pamper yourself.
+                        Choose from our range of relaxing packages, and let our expert therapists take care of you.</p>
                     </div>
                   </div>
                 </div>
@@ -560,7 +587,8 @@
           </section> -->
 
           <section id="content-section-6">
-            <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 70px; ">
+            <div class="gdlr-color-wrapper  gdlr-show-all no-skin"
+              style="background-color: #ffffff; padding-top: 70px; ">
               <div class="container">
                 <div class="eight columns">
                   <div class="gdlr-item-title-wrapper gdlr-item pos-left pos-left-divider ">
@@ -574,10 +602,12 @@
                     <div class="blog-item-holder">
                       <div class="gdlr-item gdlr-blog-medium">
                         <div class="gdlr-ux gdlr-blog-medium-ux">
-                          <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                          <article id="post-852"
+                            class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
                               <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
-                                <a href="#"> <img src="upload\kd 7.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
+                                <a href="#"> <img src="upload\kd 7.png" alt="" width="700" height="400"
+                                    style="border-radius: 5px;"></a>
                               </div>
                               <!-- <div class="blog-date-wrapper gdlr-title-font">
                                 <span class="blog-date-day">3</span>
@@ -620,10 +650,12 @@
 
                       <div class="gdlr-item gdlr-blog-medium">
                         <div class="gdlr-ux gdlr-blog-medium-ux">
-                          <article id="post-862" class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
+                          <article id="post-862"
+                            class="post-862 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-fit-row tag-blog tag-link tag-news">
                             <div class="gdlr-standard-style">
                               <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
-                                <a href="#"> <img src="upload\kd 6.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
+                                <a href="#"> <img src="upload\kd 6.png" alt="" width="700" height="400"
+                                    style="border-radius: 5px;"></a>
                               </div>
 
 
@@ -646,7 +678,8 @@
                                   <i class="ri-map-pin-line"></i>Pick up and Drop Trivandrum or Cochin<br>
                                   <i class="ri-time-line"></i>6 Days 7 Night<br>
 
-                                  <span>2 Night Munnar, 1 Night Thekkady, 1 Night Alappuzha House Boat , 2 Night Trivandrum</span>
+                                  <span>2 Night Munnar, 1 Night Thekkady, 1 Night Alappuzha House Boat , 2 Night
+                                    Trivandrum</span>
 
 
                                   <!-- <a href="#" class="excerpt-read-more">Continue Reading<i class="fa fa-long-arrow-right icon-long-arrow-right"></i></a> -->
@@ -661,10 +694,12 @@
 
                       <div class="gdlr-item gdlr-blog-medium">
                         <div class="gdlr-ux gdlr-blog-medium-ux">
-                          <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                          <article id="post-852"
+                            class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
                               <div class="gdlr-blog-thumbnail" style="border-radius: 5px;">
-                                <a href="#"> <img src="upload\kd 8.png" alt="" width="700" height="400" style="border-radius: 5px;"></a>
+                                <a href="#"> <img src="upload\kd 8.png" alt="" width="700" height="400"
+                                    style="border-radius: 5px;"></a>
                               </div>
                               <!-- <div class="blog-date-wrapper gdlr-title-font">
                                 <span class="blog-date-day">3</span>
@@ -688,7 +723,8 @@
                                 <div class="gdlr-blog-content">
 
 
-                                  <i class="ri-map-pin-line"></i>Pick up Trivandrum <i class="ri-map-pin-line"></i> Drop Madurai<br>
+                                  <i class="ri-map-pin-line"></i>Pick up Trivandrum <i class="ri-map-pin-line"></i> Drop
+                                  Madurai<br>
                                   <i class="ri-time-line"></i>6 Days<br>
 
                                   <span>2 Day Trivandrum, 1 Day Kaniyakumari, 1 Day Rameshwaram, 1 Day Madurai</span>
@@ -722,7 +758,8 @@
                     </div>
                   </div>
                   <div class="gdlr-video-item gdlr-item" style="margin-bottom: 60px;">
-                    <iframe src="//player.vimeo.com/video/56815898?title=0&amp;byline=0&amp;portrait=0" width="620" height="348"></iframe>
+                    <iframe src="//player.vimeo.com/video/56815898?title=0&amp;byline=0&amp;portrait=0" width="620"
+                      height="348"></iframe>
                     <!-- <h4 class="gdlr-video-content-title">Sollicitudin Sit Inceptos</h4>
                     <div class="gdlr-video-content">Donec sed odio dui. Maecenas faucibus mollis interdum. Aenean lacinia bibendum. Vivamus sagittis lacus vel augue laoreet rutrum.</div> -->
                   </div>
@@ -736,17 +773,23 @@
                   <div class="gdlr-gallery-item gdlr-item">
                     <div class="gallery-column eight columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 9.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
+                        <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m1.jpg"
+                          data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 9.png" alt=""
+                            width="400" height="400" style="border-radius: 5px;"></a>
                       </div>
                     </div>
                     <div class="gallery-column four columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-1231437-tropical-pool-bar-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\kd 10.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
+                        <a href="upload\photodune-1231437-tropical-pool-bar-m1.jpg" data-fancybox-group="gdlr-gal-1"
+                          data-rel="fancybox"><img src="upload\kd 10.png" alt="" width="400" height="400"
+                            style="border-radius: 5px;"></a>
                       </div>
                     </div>
                     <div class="gallery-column four columns">
                       <div class="gallery-item">
-                        <a href="upload\photodune-1576481-relaxing-m1.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\home page gallery 1.png" alt="" width="400" height="400" style="border-radius: 5px;"></a>
+                        <a href="upload\photodune-1576481-relaxing-m1.jpg" data-fancybox-group="gdlr-gal-1"
+                          data-rel="fancybox"><img src="upload\home page gallery 1.png" alt="" width="400" height="400"
+                            style="border-radius: 5px;"></a>
                       </div>
                     </div>
 
@@ -776,7 +819,8 @@
       </div>
 
       <section id="content-section-5">
-        <div class="gdlr-color-wrapper  gdlr-show-all gdlr-skin-dark-testimonial" style="background-color: orange; padding-top: 75px; ">
+        <div class="gdlr-color-wrapper  gdlr-show-all gdlr-skin-dark-testimonial"
+          style="background-color: orange; padding-top: 75px; ">
           <div class="container">
             <div class="one-fifth column"></div>
             <div class="three-fifth columns">
@@ -784,50 +828,71 @@
                 <div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container ">
                   <div class="gdlr-item-title-head">
                     <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Testimonial</h3>
-                    <div class="gdlr-item-title-carousel"><i class="icon-angle-left gdlr-flex-prev"></i><i class="icon-angle-right gdlr-flex-next"></i></div>
+                    <div class="gdlr-item-title-carousel"><i class="icon-angle-left gdlr-flex-prev"></i><i
+                        class="icon-angle-right gdlr-flex-next"></i></div>
                     <div class="clear"></div>
                   </div>
                 </div>
                 <div class="gdlr-item gdlr-testimonial-item carousel large plain-style">
                   <div class="gdlr-ux gdlr-testimonial-ux">
-                    <div class="flexslider" data-type="carousel" data-nav-container="gdlr-testimonial-item" data-columns="1">
+                    <div class="flexslider" data-type="carousel" data-nav-container="gdlr-testimonial-item"
+                      data-columns="1">
                       <ul class="slides">
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>" We were extremely satisfied with Kerala Drives. Mr. Sajan, the owner, proved to be very courteous and helpful from the beginning, striving to organize the best and most memorable Tamil Nadu and Kerala trips for us. The drivers were very friendly, and the accommodations were simply superb. I highly recommend Kerala Drives to turn your trip into an unforgettable experience! "</p>
+                            <p>" We were extremely satisfied with Kerala Drives. Mr. Sajan, the owner, proved to be very
+                              courteous and helpful from the beginning, striving to organize the best and most memorable
+                              Tamil Nadu and Kerala trips for us. The drivers were very friendly, and the accommodations
+                              were simply superb. I highly recommend Kerala Drives to turn your trip into an
+                              unforgettable experience! "</p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Daniel </span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
-                          </div>
-                        </li>
-                        <li class="testimonial-item">
-                          <div class="testimonial-content gdlr-skin-content">
-                            <p>" I want to thank Kerala Drives for providing a safe and comfortable trip. Our driver, Afsal, was incredibly friendly and made us feel like part of the family. I also want to extend my thanks to the owner, Mr. Sajan, for his exceptional service."</p>
-                          </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Nagul Nandhan</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Businesman</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Daniel
+                            </span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
                           </div>
                         </li>
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>"I want to express my gratitude to Kerala Drives for arranging such a wonderful and memorable trip for us. I also want to thank Pradeep, our driver, for his excellent driving skills and for taking care of us throughout the journey. We really enjoyed the trip and appreciate the great service."</p>
+                            <p>" I want to thank Kerala Drives for providing a safe and comfortable trip. Our driver,
+                              Afsal, was incredibly friendly and made us feel like part of the family. I also want to
+                              extend my thanks to the owner, Mr. Sajan, for his exceptional service."</p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Sai Kumar</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Nagul
+                              Nandhan</span><span class="testimonial-position gdlr-skin-info"><span>,
+                              </span>Businesman</span>
+                          </div>
+                        </li>
+                        <li class="testimonial-item">
+                          <div class="testimonial-content gdlr-skin-content">
+                            <p>"I want to express my gratitude to Kerala Drives for arranging such a wonderful and
+                              memorable trip for us. I also want to thank Pradeep, our driver, for his excellent driving
+                              skills and for taking care of us throughout the journey. We really enjoyed the trip and
+                              appreciate the great service."</p>
+                          </div>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Sai
+                              Kumar</span><span class="testimonial-position gdlr-skin-info"><span>,
+                              </span>Traveller</span>
                           </div>
                         </li>
 
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>"We spent our time very wisely. Thanks to Kerala Drives for all the planning & arrangements. "</p>
+                            <p>"We spent our time very wisely. Thanks to Kerala Drives for all the planning &
+                              arrangements. "</p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Kishor Kumar</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Kishor
+                              Kumar</span><span class="testimonial-position gdlr-skin-info"><span>,
+                              </span>Traveller</span>
                           </div>
                         </li>
 
 
                         <li class="testimonial-item">
                           <div class="testimonial-content gdlr-skin-content">
-                            <p>"Travelled safely with Kerala Drives. We feel very comfortable. We highly recommend it. "</p>
+                            <p>"Travelled safely with Kerala Drives. We feel very comfortable. We highly recommend it. "
+                            </p>
                           </div>
-                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Vijay V</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
+                          <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Vijay
+                              V</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Traveller</span>
                           </div>
                         </li>
 
@@ -864,12 +929,16 @@
 
             <h3 class="gdlr-widget-title" style="color:orange">Follow us on</h3>
             <p class="foot-sicons">
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-facebook"></i></a>
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-youtube"></i></a>
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-linkedin"></i></a>
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-twitter"></i></a>
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-pinterest"></i></a>
-              <a href="#" target="_blank" style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100092362112860" target="_blank"
+                style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UC3tmfmBZf5Ufqo2JSEwj6BA" target="_blank"
+                style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/kerala-drives-940174274/" target="_blank"
+                style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-linkedin"></i></a>
+              <a href="https://www.pinterest.com/keraladrives195/" target="_blank"
+                style="color:white; font-size:25px"><i class="gdlr-icon  fa fa-pinterest"></i></a>
+              <a href="https://www.instagram.com/kerala_drives/" target="_blank" style="color:white; font-size:25px"><i
+                  class="gdlr-icon  fa fa-instagram"></i></a>
             </p>
           </div>
         </div>
@@ -880,9 +949,19 @@
           <div class="clear"></div>
           <ul>
             <li>
-              <a href="#" style="color:white">Honeymoon Packages</a>
+              <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Honeymoon Packages</p>
             </li>
             <li>
+              <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Educational Packages</p>
+            </li>
+            <li>
+              <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Traditional packages</p>
+            </li>
+            <li>
+              <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Group Tour Packages</p>
+            </li>
+
+            <!-- <li>
               <a href="#" style="color:white">Educational Packages</a>
             </li>
             <li>
@@ -890,7 +969,7 @@
             </li>
             <li>
               <a href="#" style="color:white">Group Tour Packages</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -906,13 +985,13 @@
               <a href="about-us.html" style="color:white">About Us</a>
             </li>
             <li>
-              <a href="gallery-3-columns-with-caption.html" style="color:white">Gallery</a>
+              <a href="gallery.html" style="color:white">Gallery</a>
             </li>
             <li>
-              <a href="#" style="color:white">Getaway Tours</a>
+              <a href="getaway-tours.html" style="color:white">Getaway Tours</a>
             </li>
             <li>
-              <a href="#" style="color:white">Honeymoon</a>
+              <a href="honeymoon.html" style="color:white">Honeymoon</a>
             </li>
           </ul>
         </div>
@@ -922,7 +1001,8 @@
           <div>
 
             <footer style="position: relative;">
-              <span style="position: absolute; bottom: -250px; right: 40px; display: flex; align-items: center; color: white;">
+              <span
+                style="position: absolute; bottom: -250px; right: 40px; display: flex; align-items: center; color: white;">
                 Powered by <img src="upload\favicon2.png" alt="" style="width: 80px; height: 80px; display: block;">
               </span>
             </footer>
@@ -941,7 +1021,8 @@
     <div class="copyright-wrapper">
       <div class="copyright-container container">
         <div class="copyright" style="text-align:center">
-          <span style="color:white; font-size:18px"> @2023 <a href="" style="color:orange">TL TECHNOLOGIES PVT LTD</a> All Right Reserved </span>
+          <span style="color:white; font-size:18px"> @2023 <a href="" style="color:orange">TL TECHNOLOGIES PVT LTD</a>
+            All Right Reserved </span>
         </div>
 
       </div>
@@ -954,7 +1035,7 @@
   <script type='text/javascript' src='js\jquery\ui\core.min.js'></script>
   <script type='text/javascript' src='js\jquery\ui\datepicker.min.js'></script>
   <script type='text/javascript'>
-    jQuery(document).ready(function(jQuery) {
+    jQuery(document).ready(function (jQuery) {
       jQuery.datepicker.setDefaults({
         "closeText": "Close",
         "currentText": "Today",
@@ -1002,7 +1083,7 @@
 
 
   <script>
-    (window.MSReady = window.MSReady || []).push(function($) {
+    (window.MSReady = window.MSReady || []).push(function ($) {
 
       "use strict";
       var masterslider_4ee6 = new MasterSlider();
