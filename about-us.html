@@ -33,8 +33,9 @@
     <style>
         .body_text {
             color: black;
-            text-shadow: 0.5px 0.5px #1e1e1e;
+            /* text-shadow: 0.5px 0.5px #302f2f; */
             text-align: justify;
+            font-weight: bold;
         }
 
         .menu-item {
@@ -44,7 +45,8 @@
         }
 
         #about_us {
-            background-image: url('./images/ABOUT\ US\ B\ copy.jpg');
+            background-image: url('./images/ABOUT\ US\ BANNER.jpg');
+            background-position: -100px;
         }
 
         #nav_bar {
@@ -53,6 +55,7 @@
             -moz-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
         }
 
+
         #button-19 {
             appearance: button;
             background-color: #d61818;
@@ -60,7 +63,7 @@
             border-radius: 16px;
             border-width: 0 0 4px;
             box-sizing: border-box;
-            color: #FFFFFF;
+            color: #1f1e1e;
             cursor: pointer;
             display: inline-block;
             font-family: din-round, sans-serif;
@@ -97,7 +100,7 @@
             right: 0;
             top: 0;
             z-index: -1;
-            
+
         }
 
         #button-19:main,
@@ -114,27 +117,90 @@
             cursor: auto;
         }
 
+        #cabs {}
+
+        #cabs :hover {
+            transform: scale(1.1);
+            transition: transform .2s ease-out;
+            cursor: pointer;
+        }
 
         @media (min-width:960px) {
             .logo_img {
-                margin-top: -25px;
+                margin-top: -10px;
             }
-            #navigation_bar{
+
+            #navigation_bar {
                 margin-top: 40px;
             }
-            #button-19{
-                margin-top: -10px;
+
+            #button-19 {
+                margin-top: -15px;
             }
         }
 
         @media(max-width:959px) {
             .logo_img {
                 margin-top: -15px;
+                /* margin-left:10px; */
             }
-            #button-19{
+
+            #button-19 {
                 margin-top: -10px;
                 padding: 10px;
                 margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <style>
+        
+        *:focus {
+            outline: 0;
+        }
+
+        .banner {
+            display: flex;
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .banner div:nth-child(1) {
+            background-image: url('./images/banner\ \(3\).jpg');
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            width: 50%;
+        }
+
+        .banner div:nth-child(1) h2 {
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: #ffffff;
+            left: 100%;
+        }
+
+        .banner div:nth-child(2) {
+            background-color: #ffa500;
+            overflow: hidden;
+            position: relative;
+            width: 50%;
+        }
+
+        .banner div h2 {
+            animation: animate 10s linear infinite;
+            color: #131212;
+            font-size: 12em;
+            line-height: 50vh;
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        @keyframes animate {
+            to {
+                transform: translateX(-100%);
             }
         }
     </style>
@@ -155,7 +221,7 @@
 
             <!-- logo -->
             <div class="gdlr-header-inner">
-                <div class="gdlr-header-container container">
+                <div class="gdlr-header-container container" id="top_bar">
                     <!-- logo -->
                     <div class="gdlr-logo">
                         <div class="gdlr-logo-inner">
@@ -170,24 +236,24 @@
                                     <li class="menu-item"><a href="index.html">Gallery</a></li>
                                     <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
                                     <li class="menu-item"><a href="index.html">Honeymoon</a></li>
-                                    <li class="menu-item"><a href="index.html">For Enquiry</a></li>
+                                    <li class="menu-item"><a href="index.html">Booking</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <!-- navigation -->
-                    <div class="gdlr-navigation-wrapper"  id="navigation_bar">
+                    <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
                             <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                                <li class="menu-item"><a href="index.html" style="padding-bottom: 5px;">Home</a></li>
+                                <li class="menu-item"><a href="index.html">Home</a></li>
                                 <li class="menu-item"><a href="index.html">About Us</a></li>
                                 <li class="menu-item"><a href="index.html">Gallery</a></li>
                                 <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
                                 <li class="menu-item"><a href="index.html">Honeymoon</a></li>
                                 <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a
-                                        class="gdlr-button medium" href="#" target="_self" id="button-19">For
-                                        Enquiry</a></li>
+                                        class="gdlr-button medium" href="#" target="_self" id="button-19">Booking</a>
+                                </li>
                             </ul>
                         </nav>
                         <span class="gdlr-menu-search-button-sep">•</span>
@@ -215,7 +281,9 @@
         <div class="gdlr-page-title-wrapper" id="about_us">
             <div class="gdlr-page-title-overlay"></div>
             <div class="gdlr-page-title-container container">
-                <h1 class="gdlr-page-title">About Us</h1>
+
+                <h1 class="gdlr-page-title" style="color: #ffffff; text-shadow: 2.5px 2.5px #024e12;">About Us</h1>
+
                 <!-- <span class="gdlr-page-caption">Example Of About Us Page</span> -->
             </div>
         </div>
@@ -233,13 +301,15 @@
                                 <div class="three columns">
                                     <div class="gdlr-ux column-service-ux">
                                         <div class="gdlr-item gdlr-column-service-item gdlr-type-1">
-                                            
+                                            <div class="column-service-icon gdlr-skin-box"><i class="fa "></i></div>
                                             <div class="column-service-content-wrapper">
                                                 <h3 class="column-service-title">Private Transport</h3>
                                                 <div class="column-service-divider"></div>
                                                 <div class="column-service-content gdlr-skin-content">
-                                                    <p style="text-align: justify;">Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus,
-                                                        tellus ac cursus commodo, tortor mauris condi mentum nibh.</p>
+                                                    <p style="text-align: left;">Make a grand entrance and travel in
+                                                        style with our luxurious private transport options.
+                                                        Your comfort and safety are our top priority - trust us to
+                                                        provide reliable and efficient private transport services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,8 +323,11 @@
                                                 <h3 class="column-service-title">Diverse Destinations</h3>
                                                 <div class="column-service-divider"></div>
                                                 <div class="column-service-content gdlr-skin-content">
-                                                    <p style="text-align: justify;">Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus,
-                                                        tellus ac cursus commodo, tortor mauris condi mentum nibh.</p>
+                                                    <p style="text-align: left;">
+                                                        Our handpicked selection of destinations caters to all types of
+                                                        travelers. We take pride in offering a diverse range of unique
+                                                        and unforgettable experiences, whether you prefer vibrant cities
+                                                        or serene beaches.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -268,8 +341,10 @@
                                                 <h3 class="column-service-title">Great Hotels</h3>
                                                 <div class="column-service-divider"></div>
                                                 <div class="column-service-content gdlr-skin-content">
-                                                    <p style="text-align: justify;">Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus,
-                                                        tellus ac cursus commodo, tortor mauris condi mentum nibh.</p>
+                                                    <p style="text-align: left;">Experience luxury and comfort at our
+                                                        top-rated hotels. Our handpicked selection offers exceptional
+                                                        service and amenities, leaving you feeling pampered and
+                                                        rejuvenated during your stay.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -283,8 +358,10 @@
                                                 <h3 class="column-service-title">Fast Booking</h3>
                                                 <div class="column-service-divider"></div>
                                                 <div class="column-service-content gdlr-skin-content">
-                                                    <p style="text-align: justify;">Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus,
-                                                        tellus ac cursus commodo, tortor mauris condi mentum nibh.</p>
+                                                    <p style="text-align: left;">Save time booking your adventure
+                                                        with our fast and streamlined process. Our efficient booking
+                                                        system eliminates long wait times and complicated bookings, so
+                                                        you can be on your way quickly.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -298,7 +375,7 @@
                     <section id="content-section-2">
                         <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
                             id="gdlr-parallax-wrapper-1" data-bgspeed="0.2"
-                            style="background-image: url('./images/ABOUT\ US\ copy.jpg'); padding-top: 90px; padding-bottom: 50px; ">
+                            style="background-image: url('./images/ABOUT\ US\ REVISED\ IMAGE.jpg'); padding-top: 90px; padding-bottom: 50px; ">
                             <div class="container">
                                 <div class="six columns">
                                     <div class="gdlr-feature-media-ux gdlr-ux">
@@ -313,29 +390,30 @@
                                                     </div>
                                                 </div>
                                                 <div class="feature-media-content">
-                                                    <p class="body_text">Cras mattis consectetur purus sit amet
-                                                        fermentum. Etiam porta sem
-                                                        malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque
-                                                        ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam
-                                                        eget risus varius blandit sit amet non magna. Cras justo odio,
-                                                        dapibus ac facilisis in. Vivamus sagittis lacus vel augue
-                                                        laoreet rutrum faucibus dolor auctor.Nullam quis risus eget urna
-                                                        mollis ornare vel eu leo. Maecenas sed diam eget risus varius
-                                                        blandit sit amet non magna. </p>
-                                                    <br>
-                                                    <p class="body_text">Cras mattis consectetur purus sit amet
-                                                        fermentum. Etiam porta sem
-                                                        malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque
-                                                        ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam
-                                                        eget risus varius blandit sit amet non magna. Cras justo odio,
-                                                        dapibus ac facilisis in. Vivamus sagittis lacus vel augue
-                                                        laoreet rutrum faucibus dolor auctor.Nullam quis risus eget urna
-                                                        mollis ornare vel eu leo. Maecenas sed diam eget risus varius
-                                                        blandit sit amet non magna. Cras mattis consectetur purus sit
-                                                        amet fermentum. Morbi leo risus, porta ac consectetur ac,
-                                                        vestibulum at eros. Morbi leo risus, porta ac consectetur ac,
-                                                        vestibulum at eros. Vivamus sagittis lacus vel augue laoreet
-                                                        rutrum.</p>
+                                                    <p class="body_text">Welcome to Kerala Drives, a travel agency that
+                                                        specializes in providing unique travel experiences in God's own
+                                                        country, Kerala. Our passion for travel and exploration led us
+                                                        to create Kerala Drives, where we curate customized travel
+                                                        packages that allow you to explore Kerala's diverse landscapes,
+                                                        rich culture, and heritage.At Kerala Drives, we are
+                                                        committed to providing you with personalized attention and the
+                                                        highest level of service. Our team consists of travel experts
+                                                        who are well-versed in Kerala's geography, culture, and history.
+                                                        Our years of experience in the travel industry have equipped us
+                                                        with the knowledge and expertise to provide you with
+                                                        unforgettable travel experiences.</p>
+
+                                                    <p class="body_text"> At our company, we strongly believe that
+                                                        traveling is not just about checking off tourist attractions
+                                                        from a list. Instead, it's about immersing oneself in the local
+                                                        culture and experiencing the way of life in a particular place.
+                                                        To achieve this, we work closely with local communities in
+                                                        Kerala to offer authentic experiences that allow our travelers
+                                                        to gain a deeper understanding of the region's rich cultural
+                                                        heritage. Our goal is to create meaningful and transformative
+                                                        travel experiences that not only enrich the lives of our clients
+                                                        but also support the local communities and preserve the
+                                                        environment for future generations.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -354,15 +432,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="feature-media-content">
-                                                    <p class="body_text"> Cras justo odio, dapibus ac facilisis
-                                                        in. Vivamus sagittis lacus
-                                                        vel augue laoreet rutrum faucibus dolor auctor.Nullam quis risus
-                                                        eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus
-                                                        varius blandit sit amet non magna. Cras mattis consectetur purus
-                                                        sit amet fermentum. Morbi leo risus, porta ac consectetur ac,
-                                                        vestibulum at eros. Morbi leo risus, porta ac consectetur ac,
-                                                        vestibulum at eros. Vivamus sagittis lacus vel augue laoreet
-                                                        rutrum.</p>
+                                                    <p class="body_text"> Our travel packages are
+                                                        customizable, and we work with you to create a trip that matches
+                                                        your preferences, budget, and timeline. Whether you're looking
+                                                        for a budget-friendly trip or a luxury tour, we have something
+                                                        for everyone. Our travel packages include accommodation,
+                                                        transportation, and activities, so you can sit back and enjoy
+                                                        your Kerala experience. At Kerala Drives, we specialize in
+                                                        providing
+                                                        experiential travel packages that allow you to explore Kerala's
+                                                        diverse landscapes, from the misty mountains to the tranquil
+                                                        backwaters.</p>
                                                 </div>
                                             </div>
 
@@ -376,16 +456,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="feature-media-content">
-                                                    <p class="body_text">  Cras justo odio, dapibus ac facilisis
-                                                        in. Vivamus sagittis lacus
-                                                        vel augue laoreet rutrum faucibus dolor auctor.Nullam quis risus
-                                                        eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus
-                                                        varius blandit sit amet non magna. Cras mattis consectetur purus
-                                                        sit
-                                                        amet fermentum. Morbi leo risus, porta ac consectetur ac,
-                                                        vestibulum
-                                                        at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                                                        eros. Vivamus sagittis lacus vel augue laoreet rutrum. </p>
+                                                    <p class="body_text">At Kerala Drives, we are dedicated to being
+                                                        your go-to destination for discovering the breathtaking
+                                                        landscapes of Kerala. We have a deep passion for travel and
+                                                        strive to offer you an exceptional experience that will stay
+                                                        with you forever. Our goal is to create an unforgettable journey
+                                                        that showcases the best of what God's own country has to offer.
+                                                        So why wait? Join us on an exploration of Kerala's stunning
+                                                        beauty and let us take you on a journey that you'll always
+                                                        treasure.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -410,39 +489,32 @@
                                     <div class="gdlr-gallery-item gdlr-item"
                                         style="margin-bottom: 40px; margin-top:-40px;">
                                         <div class="gallery-column three columns">
-                                            <div class="gallery-item">
-                                                <a href="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m.jpg"
-                                                    data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img
-                                                        src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m-400x300.jpg"
-                                                        alt="" width="400" height="300" style="border-radius: 5px;"></a><span
-                                                    class="gallery-caption">Room</span>
+                                            <div class="gallery-item" id="cabs">
+                                                <img src="./images/ETIOS.jpg" alt="" width="400" height="300"
+                                                    style="border-radius: 5px;"></a><span
+                                                    class="gallery-caption">SEDAN</span>
                                             </div>
                                         </div>
                                         <div class="gallery-column three columns">
-                                            <div class="gallery-item">
-                                                <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m.jpg"
-                                                    data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img
-                                                        src="upload\photodune-7751505-luxury-home-with-swimming-pool-m-400x300.jpg"
-                                                        alt="" width="400" height="300" style="border-radius: 5px;"></a><span
-                                                    class="gallery-caption">Pool</span>
+                                            <div class="gallery-item" id="cabs">
+                                                <img src="./images/TATA B.jpg" alt="" width="400" height="300"
+                                                    style="border-radius: 5px;">
+                                                </a>
+                                                <span class="gallery-caption">BUS</span>
                                             </div>
                                         </div>
                                         <div class="gallery-column three columns">
-                                            <div class="gallery-item">
-                                                <a href="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m.jpg"
-                                                    data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img
-                                                        src="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m-400x300.jpg"
-                                                        alt="" width="400" height="300" style="border-radius: 5px;"></a><span
-                                                    class="gallery-caption">Room</span>
+                                            <div class="gallery-item" id="cabs">
+                                                <img src="./images/XUV BB.jpg" alt="" width="400" height="300"
+                                                    style="border-radius: 5px;"></a><span
+                                                    class="gallery-caption">SUV</span>
                                             </div>
                                         </div>
                                         <div class="gallery-column three columns">
-                                            <div class="gallery-item">
-                                                <a href="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m.jpg"
-                                                    data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img
-                                                        src="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m-400x300.jpg"
-                                                        alt="" width="400" height="300" style="border-radius: 5px;"></a><span
-                                                    class="gallery-caption">Room</span>
+                                            <div class="gallery-item" id="cabs">
+                                                <img src="./images/TRAVELLER.jpg" alt="" width="400" height="300"
+                                                    style="border-radius: 5px;"></a><span
+                                                    class="gallery-caption">TRAVELLER</span>
                                             </div>
                                         </div>
                                         <div class="clear"></div>
@@ -454,13 +526,29 @@
                             <div class="clear"></div>
                     </section>
 
+                    <section>
+                        <div class="banner">
+                            <div>
+                                <h2>
+                                    UNLEASH ADVENTURE WITH OUR TOURS!
+                                </h2>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    UNLEASH ADVENTURE WITH OUR TOURS!
+                                </h2>
+                            </div>
+                        </div>
+                    </section>
+
                     <section id="content-section-4">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin"
-                            style="background-color: #ffffff; padding-top: 0px; padding-bottom: 0px;">
+                            style="background-color: #ffffff; padding-top: 50px; padding-bottom: 0px;">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Our Team</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Our Leader</h3>
                                     </div>
                                 </div>
                                 <div class="section-container container">
@@ -468,11 +556,10 @@
                                         style="margin-bottom: 40px; margin-top:-40px;">
                                         <div class="gallery-column twelve columns">
                                             <div class="gallery-item">
-                                                <a href="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m.jpg"
-                                                    data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img
-                                                        src="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m-400x300.jpg"
-                                                        alt="" width="400" height="300" style="border-radius: 5px;"></a><span
-                                                    class="gallery-caption">Room</span>
+                                                <a href="./images/CEO image.png" data-fancybox-group="gdlr-gal-1"
+                                                    data-rel="fancybox"><img src="./images/CEO image.png" alt=""
+                                                        width="400" height="300" style="border-radius: 5px;"></a><span
+                                                    class="gallery-caption">Sajan Vohab (Manager)</span>
                                             </div>
                                         </div>
                                         <div class="clear"></div>
@@ -500,16 +587,15 @@
                                     <div class="gdlr-stunning-text-ux gdlr-ux"
                                         style="display: flex; justify-content: center; align-items: center;">
                                         <div class="gdlr-item gdlr-stunning-text-item type-normal">
-                                            <div style="display: flex; justify-content: center; align-items: center;">
+                                            <!-- <div style="display: flex; justify-content: center; align-items: center;">
                                                 <h2 class="stunning-text-title"><strong>Book Now!</strong></h2>
-                                            </div>
+                                            </div> -->
                                             <div class="stunning-text-caption gdlr-skin-content">
                                                 <p>Make your next holiday memorable with Kerala Drives</p>
                                             </div>
                                             <div style="display: flex; justify-content: center; align-items: center;">
                                                 <a class="gdlr-button medium" href="#" target="_self"
-                                                    style="color:white; background-color:#1e1e1e; border-radius: 20px; padding: 15px 25px; margin-top: -5px;">For
-                                                    Enquiry</a>
+                                                    style="color:white; background-color:#1e1e1e; border-radius: 20px; padding: 15px 25px; margin-top: -5px;">Booking</a>
                                             </div>
 
                                         </div>
@@ -529,8 +615,128 @@
             <div class="clear"></div>
         </div>
         <!-- content wrapper -->
-
         <footer class="footer-wrapper">
+            <div class="footer-container container" style="padding-top: 20px; padding-bottom:0px;">
+                <div class="footer-column three columns" id="footer-widget-1">
+                    <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+                        <!-- <h3 class="gdlr-widget-title" style="color:orange">Book Now</h3> -->
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            <!-- <p style="color:white"><i class="gdlr-icon fa fa-phone"></i> +91 80864 07979</p> -->
+
+                            <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 15px;">Follow us on</h3>
+                            <p class="foot-sicons" style="display: flex; justify-content: space-around; ">
+                                <a href="#" target="_blank"> <img src="./images/facebook.png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+                                <a href="#" target="_blank"> <img src="./images/youtube.png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+                                <a href="#" target="_blank"> <img src="./images/twitter.png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+                                <a href="#" target="_blank"> <img src="./images/pinterest.png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+                                <a href="#" target="_blank"> <img src="./images/instagram (1).png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+                                <a href="#" target="_blank"> <img src="./images/linkedin.png" alt=""
+                                        style="height: 30px; width:30px"> </a>
+
+                                <!-- <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-facebook"></i></a>
+                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-youtube"></i></a>
+                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-linkedin"></i></a>
+                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-twitter"></i></a>
+                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-pinterest"></i></a>
+                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                        class="gdlr-icon  fa fa-instagram"></i></a> -->
+                            </p>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="./images/20230510170343__fpdl.in__ai-generated-illustration-vacation-tropical-sunny-beach-beautiful-sand_441362-4056-removebg-preview.png" alt="globe image" style="height: 160px; margin-top: -30px; margin-left: -10px;">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-2">
+                    <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Our Packages</h3>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="#" style="color:white">Honeymoon Packages</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Educational Packages</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Traditional packages</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Group Tour Packages</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-3" style="margin-bottom: -30px;">
+                    <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Quick Links</h3>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="#" style="color:white">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Getaway Tours</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:white">Honeymoon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-4">
+                    <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+                        <div
+                            style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <h3 class="gdlr-widget-title" style="color:orange">Powered by</h3>
+                            <img src="upload\favicon2.png" alt="" style="width: 120px; height: 120px; display: block;">
+
+                            <!-- <footer style="position: relative;">
+                                <span
+                                    style="position: absolute; bottom: -250px; right: 40px; display: flex; align-items: center; color: white;">
+                                    Powered by <img src="upload\favicon2.png" alt=""
+                                        style="width: 80px; height: 80px; display: block;">
+                                </span>
+                            </footer> -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+
+
+            <div class="copyright-wrapper">
+                <div class="copyright-container container">
+                    <div class="copyright" style="text-align:center">
+                        <span style="color:white; font-size:18px"> @2023 <a href="" style="color:orange">TL TECHNOLOGIES
+                                PVT LTD</a> All Rights Reserved </span>
+                    </div>
+
+                </div>
+        </footer>
+        <!-- <footer class="footer-wrapper">
             <div class="footer-container container">
                 <div class="footer-column three columns">
                     <div class="foot-book">
@@ -609,7 +815,7 @@
                     <div class="clear"></div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
     <!-- body-wrapper -->
 
