@@ -7,6 +7,11 @@
 
     <title>Kerala Drives</title>
 
+    <link rel="shortcut icon" href="./images/Logo Final_White Round.svg">
+	<link rel="apple-touch-icon" href="./images/Logo Final_White Round.svg">
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/Logo Final_White Round.svg">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/Logo Final_White Round.svg">    
+
     <link rel='stylesheet' href='plugins\gdlr-hostel\gdlr-hotel.css' type='text/css' media='all'>
     <link rel='stylesheet' href='css\style.css' type='text/css' media='all'>
     <link rel='stylesheet' href='plugins\superfish\css\superfish.css' type='text/css' media='all'>
@@ -33,8 +38,9 @@
     <style>
         .body_text {
             color: black;
-            text-shadow: 0.5px 0.5px #1e1e1e;
+            /* text-shadow: 0.5px 0.5px #302f2f; */
             text-align: justify;
+            font-weight: bold;
         }
 
         .menu-item {
@@ -44,7 +50,8 @@
         }
 
         #about_us {
-            background-image: url('./images/ABOUT\ US\ B\ copy.jpg');
+            background-image: url('./images/ABOUT\ US\ BANNER.jpg');
+            background-position: -100px;
         }
 
         #nav_bar {
@@ -53,6 +60,7 @@
             -moz-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
         }
 
+
         #button-19 {
             appearance: button;
             background-color: #d61818;
@@ -60,7 +68,7 @@
             border-radius: 16px;
             border-width: 0 0 4px;
             box-sizing: border-box;
-            color: #FFFFFF;
+            color: #1f1e1e;
             cursor: pointer;
             display: inline-block;
             font-family: din-round, sans-serif;
@@ -97,7 +105,7 @@
             right: 0;
             top: 0;
             z-index: -1;
-            
+
         }
 
         #button-19:main,
@@ -114,24 +122,35 @@
             cursor: auto;
         }
 
+        #cabs {}
+
+        #cabs :hover {
+            transform: scale(1.1);
+            transition: transform .2s ease-out;
+            cursor: pointer;
+        }
 
         @media (min-width:960px) {
             .logo_img {
-                margin-top: -25px;
+                margin-top: -10px;
             }
-            #navigation_bar{
+
+            #navigation_bar {
                 margin-top: 40px;
             }
-            #button-19{
-                margin-top: -10px;
+
+            #button-19 {
+                margin-top: -15px;
             }
         }
 
         @media(max-width:959px) {
             .logo_img {
                 margin-top: -15px;
+                /* margin-left:10px; */
             }
-            #button-19{
+
+            #button-19 {
                 margin-top: -10px;
                 padding: 10px;
                 margin-bottom: 10px;
@@ -250,10 +269,10 @@
                                 <button class="dl-trigger" style="border-radius: 5px;">Open Menu</button>
                                 <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu"
                                     style="border-radius: 5px;">
-                                    <li class="menu-item"><a href="index.html">Home</a></li>
+                                    <li class="menu-item"><a href="/">Home</a></li> 
                                     <li class="menu-item"><a href="about-us.html">About Us</a></li>
                                     <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                                    <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                                    <li class="menu-item"><a href="getaway-tours.html" style="color: #ffa500;">Getaway Tours</a></li>
                                     <li class="menu-item"><a href="honeymoon.html">Honeymoon</a></li>
                                     <li class="menu-item"><a href="https://booking.keraladrives.com/">Booking</a></li>
                                 </ul>
@@ -265,10 +284,10 @@
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
                             <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                                <li class="menu-item"><a href="index.html">Home</a></li>
+                                <li class="menu-item"><a href="/">Home</a></li>
                                 <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                                <li class="menu-item"><a href="#">Gallery</a></li>
-                                <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                                <li class="menu-item"><a href="getaway-tours.html" style="color: #ffa500;">Getaway Tours</a></li>
                                 <li class="menu-item"><a href="#">Honeymoon</a></li>
                                 <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a
                                         class="gdlr-button medium" href="https://booking.keraladrives.com/" target="_self" id="button-19">Booking</a>
@@ -323,31 +342,25 @@
                                         <div class="gdlr-item gdlr-room-item gdlr-classic-room">
                                             <div class="gdlr-ux gdlr-classic-room-ux package-box">
                                                 <div class="gdlr-room-thumbnail">
-                                                    <img src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m-700x400.jpg" alt="" width="700" height="400" class="img">
+                                                    <img src="images/madurai.png" alt="" width="700" height="400" class="img">
                                                 </div>
-                                                <h3 class="package-heading">Kochi &#8211; Munnar &#8211; Kochi</h3>
+                                                <h3 class="package-heading">Kochi &#8211; Madhurai &#8211; Thekkdy &#8211; Ooty</h3>
                                                 <div class="package-body">
-                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to kochi</span></div>
-                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to Madhurai</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">2 days </span></div>
                                                     
                                                     <div class="clear"></div>
                                                 
                                                 </div>
                                                 <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-                                                    <!-- <div style="padding: 10px; color: #454545;">
-                                                        Itinerary Guide <i class="fa-solid fa-chevron-down"></i>
-                                                    </div> -->
+                                                    
                                                     <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
                                                         <div onclick="myFunction1()" class="dropbtn" style="font-size: 14px;">Itinerary Guide &nbsp; <i class="fa-solid fa-chevron-down"></i></div>
                                                         <div id="myDropdown1" class="dropdown-content">
                                                             <br>
                                                             <!-- Add the dropdown section here  -->
                                                             <p style="font-size: 13px;"> 
-                                                                <span class="itinerary-components"> Day 1 - Pick up from Kochi <br> </span>
-                                                                <span class="itinerary-components"> Day 2 - Munnar Local Visit <br> </span>
-                                                                <span class="itinerary-components"> Day 3 - Munnar Sight Seeing <br> </span>
-                                                                <span class="itinerary-components"> Day 4 - Alappuzha Boat house Stay <br> </span>
-                                                                <span class="itinerary-components"> Day 5 - Drop to Kochi <br> </span>
+                                                                <span class="itinerary-components"> 1 Night Kodaikanal <br> </span>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -384,12 +397,12 @@
                                         <div class="gdlr-item gdlr-room-item gdlr-classic-room">
                                             <div class="gdlr-ux gdlr-classic-room-ux package-box">
                                                 <div class="gdlr-room-thumbnail">
-                                                    <img src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m-700x400.jpg" alt="" width="700" height="400" class="img">
+                                                    <img src="/images/Kanyakumari.png" alt="place image" width="700" height="400" class="img">
                                                 </div>
-                                                <h3 class="package-heading">Kochi &#8211; Munnar &#8211; Kochi</h3>
+                                                <h3 class="package-heading">Thiruvananthapuram &#8211; Madhurai</h3>
                                                 <div class="package-body">
-                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to kochi</span></div>
-                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to Madhurai</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">6 days</span></div>
                                                     
                                                     <div class="clear"></div>
                                                 
@@ -404,11 +417,9 @@
                                                             <br>
                                                             <!-- Add the dropdown section here  -->
                                                             <p style="font-size: 13px;"> 
-                                                                <span class="itinerary-components"> Day 1 - Pick up from Kochi <br> </span>
-                                                                <span class="itinerary-components"> Day 2 - Munnar Local Visit <br> </span>
-                                                                <span class="itinerary-components"> Day 3 - Munnar Sight Seeing <br> </span>
-                                                                <span class="itinerary-components"> Day 4 - Alappuzha Boat house Stay <br> </span>
-                                                                <span class="itinerary-components"> Day 5 - Drop to Kochi <br> </span>
+                                                                <span class="itinerary-components"> 1 Night Thiruvananthapuram <br> </span>
+                                                                <span class="itinerary-components"> 1 night Kanyakumari <br> </span>
+                                                                <span class="itinerary-components"> 1 night Rameswaram <br> </span>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -446,12 +457,12 @@
                                         <div class="gdlr-item gdlr-room-item gdlr-classic-room">
                                             <div class="gdlr-ux gdlr-classic-room-ux package-box">
                                                 <div class="gdlr-room-thumbnail">
-                                                    <img src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m-700x400.jpg" alt="" width="700" height="400" class="img">
+                                                    <img src="images/ooty.png" alt="" width="700" height="400" class="img">
                                                 </div>
-                                                <h3 class="package-heading">Kochi &#8211; Munnar &#8211; Kochi</h3>
+                                                <h3 class="package-heading">Ooti 2 Night's</h3>
                                                 <div class="package-body">
-                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to kochi</span></div>
-                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
+                                                    <div class="gdlr-room-info">&nbsp;<span class="gdlr-head">Student group</span></div>
+                                                    <div class="gdlr-room-info">&nbsp;<span class="gdlr-head">Kerala Temple Visit</span></div>
                                                     
                                                     <div class="clear"></div>
                                                 
@@ -460,41 +471,7 @@
                                                     <!-- <div style="padding: 10px; color: #454545;">
                                                         Itinerary Guide <i class="fa-solid fa-chevron-down"></i>
                                                     </div> -->
-                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                                                        <div onclick="myFunction3()" class="dropbtn" style="font-size: 14px;">Itinerary Guide &nbsp; <i class="fa-solid fa-chevron-down"></i></div>
-                                                        <div id="myDropdown3" class="dropdown-content">
-                                                            <br>
-                                                            <!-- Add the dropdown section here  -->
-                                                            <p style="font-size: 13px;"> 
-                                                                <span class="itinerary-components"> Day 1 - Pick up from Kochi <br> </span>
-                                                                <span class="itinerary-components"> Day 2 - Munnar Local Visit <br> </span>
-                                                                <span class="itinerary-components"> Day 3 - Munnar Sight Seeing <br> </span>
-                                                                <span class="itinerary-components"> Day 4 - Alappuzha Boat house Stay <br> </span>
-                                                                <span class="itinerary-components"> Day 5 - Drop to Kochi <br> </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <script>
-                                                        /* When the user clicks on the button, 
-                                                        toggle between hiding and showing the dropdown content */
-                                                        function myFunction3() {
-                                                          document.getElementById("myDropdown3").classList.toggle("show");
-                                                        }
-                                                        
-                                                        // Close the dropdown if the user clicks outside of it
-                                                        window.onclick = function(event) {
-                                                          if (!event.target.matches('.dropbtn')) {
-                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
-                                                            var i;
-                                                            for (i = 0; i < dropdowns.length; i++) {
-                                                              var openDropdown = dropdowns[i];
-                                                              if (openDropdown.classList.contains('show')) {
-                                                                openDropdown.classList.remove('show');
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                        </script>
+                                                    
                                                     <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
                                                         <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
                                                     </div>
@@ -504,17 +481,17 @@
                                         </div>
                                     </div>
                                     <div class="clear"></div>
-                                    <div style="font-size: x-large; font-weight: bold; color: black;">Kerala to Tamil Nadu  Package (2)</div> <br>
+                                    <div style="font-size: x-large; font-weight: bold; color: black;">Kerala Package (1)</div> <br>
                                     <div class="four columns">
                                         <div class="gdlr-item gdlr-room-item gdlr-classic-room">
                                             <div class="gdlr-ux gdlr-classic-room-ux package-box">
                                                 <div class="gdlr-room-thumbnail">
-                                                    <img src="upload\photodune-2676493-suite-bed-room-with-balcony-of-a-luxury-resort-m-700x400.jpg" alt="" width="700" height="400" class="img">
+                                                    <img src="images/Munnar.png" alt="" width="700" height="400" class="img">
                                                 </div>
-                                                <h3 class="package-heading">Kochi &#8211; Munnar &#8211; Kochi</h3>
+                                                <h3 class="package-heading">Kochi or Thiruvananthapuram</h3>
                                                 <div class="package-body">
-                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to kochi</span></div>
-                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
+                                                    <!-- <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick up and drop to kochi</span></div> -->
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 nights and 6 days</span></div>
                                                     
                                                     <div class="clear"></div>
                                                 
@@ -529,11 +506,10 @@
                                                             <br>
                                                             <!-- Add the dropdown section here  -->
                                                             <p style="font-size: 13px;"> 
-                                                                <span class="itinerary-components"> Day 1 - Pick up from Kochi <br> </span>
-                                                                <span class="itinerary-components"> Day 2 - Munnar Local Visit <br> </span>
-                                                                <span class="itinerary-components"> Day 3 - Munnar Sight Seeing <br> </span>
-                                                                <span class="itinerary-components"> Day 4 - Alappuzha Boat house Stay <br> </span>
-                                                                <span class="itinerary-components"> Day 5 - Drop to Kochi <br> </span>
+                                                                <span class="itinerary-components"> 2 nights Munnar<br> </span>
+                                                                <span class="itinerary-components"> 1 night Thekkady <br> </span>
+                                                                <span class="itinerary-components"> 1 night Allapy house boat <br> </span>
+                                                                <span class="itinerary-components"> 2 nights Thiruvananthapuram <br> </span>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -567,7 +543,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="four columns">
+                                    <!-- <div class="four columns">
                                         <div class="gdlr-item gdlr-room-item gdlr-classic-room">
                                             <div class="gdlr-ux gdlr-classic-room-ux package-box">
                                                 <div class="gdlr-room-thumbnail">
@@ -582,14 +558,12 @@
                                                 
                                                 </div>
                                                 <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-                                                    <!-- <div style="padding: 10px; color: #454545;">
-                                                        Itinerary Guide <i class="fa-solid fa-chevron-down"></i>
-                                                    </div> -->
+                                                    
                                                     <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                                                        <div onclick="myFunction5()" class="dropbtn" style="font-size: 14px;">Itinerary Guide &nbsp; <i class="fa-solid fa-chevron-down"></i></div>
+                                                        <div onclick="myFunction5()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down"></i></div>
                                                         <div id="myDropdown5" class="dropdown-content">
                                                             <br>
-                                                            <!-- Add the dropdown section here  -->
+                                                            
                                                             <p style="font-size: 13px;"> 
                                                                 <span class="itinerary-components"> Day 1 - Pick up from Kochi <br> </span>
                                                                 <span class="itinerary-components"> Day 2 - Munnar Local Visit <br> </span>
@@ -628,7 +602,7 @@
                                                
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="clear"></div>
                                 </div>
                             </div>
@@ -656,18 +630,16 @@
 
                             <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 15px;">Follow us on</h3>
                             <p class="foot-sicons" style="display: flex; justify-content: space-around; ">
-                                <a href="#" target="_blank"> <img src="./images/facebook.png" alt=""
-                                        style="height: 30px; width:30px"> </a>
-                                <a href="#" target="_blank"> <img src="./images/youtube.png" alt=""
-                                        style="height: 30px; width:30px"> </a>
-                                <a href="#" target="_blank"> <img src="./images/twitter.png" alt=""
-                                        style="height: 30px; width:30px"> </a>
-                                <a href="#" target="_blank"> <img src="./images/pinterest.png" alt=""
-                                        style="height: 30px; width:30px"> </a>
-                                <a href="#" target="_blank"> <img src="./images/instagram (1).png" alt=""
-                                        style="height: 30px; width:30px"> </a>
-                                <a href="#" target="_blank"> <img src="./images/linkedin.png" alt=""
-                                        style="height: 30px; width:30px"> </a>
+                                <a href="https://www.facebook.com/profile.php?id=100092362112860" target="_blank"> <img
+                                        src="./images/facebook.png" alt="" style="height: 30px; width:30px"> </a>
+                                <a href="https://www.youtube.com/channel/UC3tmfmBZf5Ufqo2JSEwj6BA" target="_blank"> <img
+                                        src="./images/youtube.png" alt="" style="height: 30px; width:30px"> </a>
+                                <a href="https://www.pinterest.com/keraladrives195/" target="_blank"> <img
+                                        src="./images/pinterest.png" alt="" style="height: 30px; width:30px"> </a>
+                                <a href="https://www.instagram.com/kerala_drives/" target="_blank"> <img
+                                        src="./images/instagram (1).png" alt="" style="height: 30px; width:30px"> </a>
+                                <a href="https://www.linkedin.com/in/kerala-drives-940174274/" target="_blank"> <img
+                                        src="./images/linkedin.png" alt="" style="height: 30px; width:30px"> </a>
 
                                 <!-- <a href="#" target="_blank" style="color:white; font-size:25px"><i
                                         class="gdlr-icon  fa fa-facebook"></i></a>
@@ -683,8 +655,9 @@
                                         class="gdlr-icon  fa fa-instagram"></i></a> -->
                             </p>
                             <div style="display: flex; justify-content: center; align-items: center;">
-                            <img src="./images/20230510170343__fpdl.in__ai-generated-illustration-vacation-tropical-sunny-beach-beautiful-sand_441362-4056-removebg-preview.png" alt="globe image" style="height: 160px; margin-top: -30px; margin-left: -10px;">
-                        </div>
+                                <img src="./images/20230510170343__fpdl.in__ai-generated-illustration-vacation-tropical-sunny-beach-beautiful-sand_441362-4056-removebg-preview.png"
+                                    alt="globe image" style="height: 160px; margin-top: -30px; margin-left: -10px;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -694,17 +667,27 @@
                         <div class="clear"></div>
                         <ul>
                             <li>
-                                <a href="#" style="color:white">Honeymoon Packages</a>
+                                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Honeymoon Packages</p>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Educational Packages</a>
+                                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Educational Packages</p>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Traditional packages</a>
+                                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Traditional packages</p>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Group Tour Packages</a>
+                                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Group Tour Packages</p>
                             </li>
+
+                            <!-- <li>
+                              <a href="#" style="color:white">Educational Packages</a>
+                            </li>
+                            <li>
+                              <a href="#" style="color:white">Traditional packages</a>
+                            </li>
+                            <li>
+                              <a href="#" style="color:white">Group Tour Packages</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -714,19 +697,19 @@
                         <div class="clear"></div>
                         <ul>
                             <li>
-                                <a href="#" style="color:white">Home</a>
+                                <a href="/" style="color:white">Home</a>
                             </li>
                             <li>
-                                <a href="#" style="color:white">About Us</a>
+                                <a href="about-us.html" style="color:white">About Us</a>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Gallery</a>
+                                <a href="gallery.html" style="color:white">Gallery</a>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Getaway Tours</a>
+                                <a href="getaway-tours.html" style="color:white">Getaway Tours</a>
                             </li>
                             <li>
-                                <a href="#" style="color:white">Honeymoon</a>
+                                <a href="honeymoon.html" style="color:white">Honeymoon</a>
                             </li>
                         </ul>
                     </div>
@@ -736,7 +719,9 @@
                         <div
                             style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                             <h3 class="gdlr-widget-title" style="color:orange">Powered by</h3>
-                            <img src="upload\favicon2.png" alt="" style="width: 120px; height: 120px; display: block;">
+                            <a href="https://tltechnologies.net/" target="_blank" rel="noopener noreferrer"><img
+                                    src="upload\favicon2.png" alt=""
+                                    style="width: 120px; height: 120px; display: block;"></a>
 
                             <!-- <footer style="position: relative;">
                                 <span
