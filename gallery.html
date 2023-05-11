@@ -38,8 +38,9 @@
   <style>
     .body_text {
       color: black;
-      text-shadow: 0.5px 0.5px #1e1e1e;
+      /* text-shadow: 0.5px 0.5px #302f2f; */
       text-align: justify;
+      font-weight: bold;
     }
 
     .menu-item {
@@ -49,12 +50,8 @@
     }
 
     #about_us {
-      background-image: url('./images/ABOUT\ US\ B\ copy.jpg');
-    }
-
-    #gallery_banner {
-      background-image: url('./upload/BANNER\ KERALA\ DRIVES\(1\).png');
-
+      background-image: url('./images/ABOUT\ US\ BANNER.jpg');
+      background-position: -100px;
     }
 
     #nav_bar {
@@ -63,15 +60,9 @@
       -moz-box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
     }
 
-    #overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+    #gallery_banner {
+
+      background-image: url(./upload/BANNER\ KERALA\ DRIVES\(1\).png);
     }
 
     #button-19 {
@@ -81,7 +72,7 @@
       border-radius: 16px;
       border-width: 0 0 4px;
       box-sizing: border-box;
-      color: #FFFFFF;
+      color: #1f1e1e;
       cursor: pointer;
       display: inline-block;
       font-family: din-round, sans-serif;
@@ -135,9 +126,15 @@
       cursor: auto;
     }
 
+    #cabs :hover {
+      transform: scale(1.1);
+      transition: transform .2s ease-out;
+      cursor: pointer;
+    }
+
     @media (min-width:960px) {
       .logo_img {
-        margin-top: -25px;
+        margin-top: -10px;
       }
 
       #navigation_bar {
@@ -145,13 +142,14 @@
       }
 
       #button-19 {
-        margin-top: -10px;
+        margin-top: -15px;
       }
     }
 
     @media(max-width:959px) {
       .logo_img {
         margin-top: -15px;
+        /* margin-left:10px; */
       }
 
       #button-19 {
@@ -173,7 +171,7 @@
 
       <!-- logo -->
       <div class="gdlr-header-inner">
-        <div class="gdlr-header-container container">
+        <div class="gdlr-header-container container" id="top_bar">
           <!-- logo -->
           <div class="gdlr-logo">
             <div class="gdlr-logo-inner">
@@ -182,28 +180,28 @@
               <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                 <button class="dl-trigger" style="border-radius: 5px;">Open Menu</button>
                 <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu" style="border-radius: 5px;">
-                  <li class="menu-item"><a href="index.html">Home</a></li>
+                  <li class="menu-item"><a href="/">Home</a></li>
                   <li class="menu-item"><a href="about-us.html">About Us</a></li>
                   <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                  <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
-                  <li class="menu-item"><a href="index.html">Honeymoon</a></li>
-                  <li class="menu-item"><a href="index.html">For Enquiry</a></li>
+                  <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                  <li class="menu-item"><a href="honeymoon.html">Honeymoon</a></li>
+                  <li class="menu-item"><a href="https://booking.keraladrives.com/">Booking</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
           <!-- navigation -->
-          <div class="gdlr-navigation-wrapper" id="navigation_bar">
+          <div class="gdlr-navigation-wrapper">
             <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
               <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                <li class="menu-item"><a href="index.html" style="padding-bottom: 5px;" c>Home</a></li>
+                <li class="menu-item"><a href="/">Home</a></li>
                 <li class="menu-item"><a href="about-us.html">About Us</a></li>
                 <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                <li class="menu-item"><a href="index.html">Getaway Tours</a></li>
-                <li class="menu-item"><a href="index.html">Honeymoon</a></li>
-                <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a class="gdlr-button medium" href="#" target="_self" id="button-19">For
-                    Enquiry</a></li>
+                <li class="menu-item"><a href="getaway-tours.html">Getaway Tours</a></li>
+                <li class="menu-item"><a href="honeymoon.html">Honeymoon</a></li>
+                <li class="menu-item menu-item-has-children gdlr-mega-menu" style="float: right;"><a class="gdlr-button medium" href="https://booking.keraladrives.com/" target="blank" id="button-19">Booking</a>
+                </li>
               </ul>
             </nav>
             <span class="gdlr-menu-search-button-sep">•</span>
@@ -224,6 +222,7 @@
         </div>
       </div>
     </header>
+
     <div id="gdlr-header-substitute">
     </div>
     <div class="gdlr-page-title-wrapper" id="gallery_banner">
@@ -250,19 +249,24 @@
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\gallery.png" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\gallery (1).png" alt="" width="400" height="300" style="border-radius: 5px;"></a><span class="gallery-caption">MUNNAR</span>
-                    <div class="gdlr-blog-content">The hills of Munnar are covered with tea gardens, rolling hills, and misty mountains. Here's a glimpse of the scenic beauty of Munnar that will leave you mesmerized.</div>
+                    <div class="gdlr-blog-content">The hills of Munnar are covered with tea gardens, rolling hills, and
+                      misty mountains. Here's a glimpse of the scenic beauty of Munnar that will leave you mesmerized.
+                    </div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\photodune-7751505-luxury-home-with-swimming-pool-m.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\1.png" alt="" width="400" height="300" style="border-radius: 5px;"></a><span class="gallery-caption">KOVALAM</span>
-                    <div class="gdlr-blog-content">Kovalam is known for its golden sand beaches, crystal-clear waters, and breathtaking sunsets. Here's a glimpse of the romantic ambiance of Kovalam that will leave you spellbound.</div>
+                    <div class="gdlr-blog-content">Kovalam is known for its golden sand beaches, crystal-clear waters,
+                      and breathtaking sunsets. Here's a glimpse of the romantic ambiance of Kovalam that will leave you
+                      spellbound.</div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\photodune-2232283-hotel-room-with-bed-and-wooden-m.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\8.png" alt="" width="400" height="300" style="border-radius: 5px;"></a><span class="gallery-caption">WAYANAD</span>
-                    <div class="gdlr-blog-content">Wayanad is a lush green hill station with waterfalls, forests, and wildlife. Here's a glimpse of the stunning landscapes of Wayanad that will leave you in awe.</div>
+                    <div class="gdlr-blog-content">Wayanad is a lush green hill station with waterfalls, forests, and
+                      wildlife. Here's a glimpse of the stunning landscapes of Wayanad that will leave you in awe.</div>
                   </div>
                 </div>
                 <div class="clear"></div>
@@ -270,21 +274,26 @@
                   <div class="gallery-item">
                     <a href="upload\photodune-396585-spa-m.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\7.png" alt="" width="400" height="300" style="border-radius: 5px;"></a>
                     <span class="gallery-caption">ALLEPPEY</span>
-                    <div class="gdlr-blog-content">The backwaters of Alleppey offer a serene and peaceful experience, with pristine waterways, coconut groves, and traditional houseboats. Here's a glimpse of the tranquil beauty of Alleppey.</div>
+                    <div class="gdlr-blog-content">The backwaters of Alleppey offer a serene and peaceful experience,
+                      with pristine waterways, coconut groves, and traditional houseboats. Here's a glimpse of the
+                      tranquil beauty of Alleppey.</div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\161H.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\4.png" alt="" width="400" height="300" style="border-radius: 5px;"></a>
                     <span class="gallery-caption">VARKALA</span>
-                    <div class="gdlr-blog-content"> Varkala is a tranquil beach destination with golden sand beaches, cliffside views, and breathtaking sunsets. Here's a glimpse of the serene beauty of Varkala that will transport you to a state of bliss.
+                    <div class="gdlr-blog-content"> Varkala is a tranquil beach destination with golden sand beaches,
+                      cliffside views, and breathtaking sunsets. Here's a glimpse of the serene beauty of Varkala that
+                      will transport you to a state of bliss.
                     </div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\Fotolia_16820650_Subscription_Monthly_XL.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\6.png" alt="" width="400" height="300" style="border-radius: 5px;"></a><span class="gallery-caption">THEKKADY</span>
-                    <div class="gdlr-blog-content"> Thekkady is a wildlife destination with stunning natural beauty and exotic wildlife. Here's a glimpse of the exotic beauty of Thekkady that will leave you enchanted.
+                    <div class="gdlr-blog-content"> Thekkady is a wildlife destination with stunning natural beauty and
+                      exotic wildlife. Here's a glimpse of the exotic beauty of Thekkady that will leave you enchanted.
                     </div>
                   </div>
                 </div>
@@ -292,20 +301,25 @@
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\Fotolia_34636860_Subscription_Monthly_XXL.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\Athirapally-Falls.jpg" alt="" width="400" height="300" style="border-radius: 5px; height: 262px;"></a><span class="gallery-caption">ATHIRAPPILLY</span>
-                    <div class="gdlr-blog-content">Athirappilly is a scenic waterfall destination located near Thrissur. Here's a glimpse of the stunning beauty of Athirappilly that will leave you speechless.</div>
+                    <div class="gdlr-blog-content">Athirappilly is a scenic waterfall destination located near Thrissur.
+                      Here's a glimpse of the stunning beauty of Athirappilly that will leave you speechless.</div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\photodune-3973259-hotel-room-m.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\poovar island 1.jpg" alt="" width="400" height="300" style="border-radius: 5px;"></a><span class="gallery-caption">POOVAR ISLAND</span>
-                    <div class="gdlr-blog-content">Poovar Island is a secluded island paradise surrounded by backwaters on one side and the Arabian Sea on the other. Here's a glimpse of the pristine beauty of Poovar Island that will make you want to visit it immediately.
+                    <div class="gdlr-blog-content">Poovar Island is a secluded island paradise surrounded by backwaters
+                      on one side and the Arabian Sea on the other. Here's a glimpse of the pristine beauty of Poovar
+                      Island that will make you want to visit it immediately.
                     </div>
                   </div>
                 </div>
                 <div class="gallery-column four columns">
                   <div class="gallery-item">
                     <a href="upload\bekal.jpg" data-fancybox-group="gdlr-gal-1" data-rel="fancybox"><img src="upload\bekal.jpg" alt="" width="400" height="300" style="border-radius: 5px; height: 262px;"></a><span class="gallery-caption">BEKAL</span>
-                    <div class="gdlr-blog-content">Bekal is a hidden gem located in northern Kerala with a stunning coastline and a historic fort. Here's a glimpse of the historic beauty of Bekal that will take you back in time.
+                    <div class="gdlr-blog-content">Bekal is a hidden gem located in northern Kerala with a stunning
+                      coastline and a historic fort. Here's a glimpse of the historic beauty of Bekal that will take you
+                      back in time.
                     </div>
                   </div>
                 </div>
@@ -323,121 +337,130 @@
       <div class="clear"></div>
     </div>
     <!-- content wrapper -->
-   <footer class="footer-wrapper">
-     <div class="footer-container container" style="padding-top: 20px; padding-bottom:0px;">
-       <div class="footer-column three columns" id="footer-widget-1">
-         <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
-           <!-- <h3 class="gdlr-widget-title" style="color:orange">Book Now</h3> -->
-           <div class="clear"></div>
-           <div class="textwidget">
-             <!-- <p style="color:white"><i class="gdlr-icon fa fa-phone"></i> +91 80864 07979</p> -->
+    <footer class="footer-wrapper">
+      <div class="footer-container container" style="padding-top: 20px; padding-bottom:0px;">
+        <div class="footer-column three columns" id="footer-widget-1">
+          <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+            <!-- <h3 class="gdlr-widget-title" style="color:orange">Book Now</h3> -->
+            <div class="clear"></div>
+            <div class="textwidget">
+              <!-- <p style="color:white"><i class="gdlr-icon fa fa-phone"></i> +91 80864 07979</p> -->
 
-             <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 15px;">Follow us on</h3>
-             <p class="foot-sicons" style="display: flex; justify-content: space-around; ">
-               <a href="#" target="_blank"> <img src="./images/facebook.png" alt="" style="height: 30px; width:30px"> </a>
-               <a href="#" target="_blank"> <img src="./images/youtube.png" alt="" style="height: 30px; width:30px"> </a>
-               <a href="#" target="_blank"> <img src="./images/twitter.png" alt="" style="height: 30px; width:30px"> </a>
-               <a href="#" target="_blank"> <img src="./images/pinterest.png" alt="" style="height: 30px; width:30px"> </a>
-               <a href="#" target="_blank"> <img src="./images/instagram (1).png" alt="" style="height: 30px; width:30px"> </a>
-               <a href="#" target="_blank"> <img src="./images/linkedin.png" alt="" style="height: 30px; width:30px"> </a>
+              <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 15px;">Follow us on</h3>
+              <p class="foot-sicons" style="display: flex; justify-content: space-around; ">
+                <a href="https://www.facebook.com/profile.php?id=100092362112860" target="_blank"> <img src="./images/facebook.png" alt="" style="height: 30px; width:30px"> </a>
+                <a href="https://www.youtube.com/channel/UC3tmfmBZf5Ufqo2JSEwj6BA" target="_blank"> <img src="./images/youtube.png" alt="" style="height: 30px; width:30px"> </a>
+                <a href="https://www.pinterest.com/keraladrives195/" target="_blank"> <img src="./images/pinterest.png" alt="" style="height: 30px; width:30px"> </a>
+                <a href="https://www.instagram.com/kerala_drives/" target="_blank"> <img src="./images/instagram (1).png" alt="" style="height: 30px; width:30px"> </a>
+                <a href="https://www.linkedin.com/in/kerala-drives-940174274/" target="_blank"> <img src="./images/linkedin.png" alt="" style="height: 30px; width:30px"> </a>
 
-               <!-- <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-facebook"></i></a>
-                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-youtube"></i></a>
-                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-twitter"></i></a>
-                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-pinterest"></i></a>
-                                <a href="#" target="_blank" style="color:white; font-size:25px"><i
-                                        class="gdlr-icon  fa fa-instagram"></i></a> -->
-             </p>
-             <div style="display: flex; justify-content: center; align-items: center;">
-               <img src="./images/20230510170343__fpdl.in__ai-generated-illustration-vacation-tropical-sunny-beach-beautiful-sand_441362-4056-removebg-preview.png" alt="globe image" style="height: 160px; margin-top: -30px; margin-left: -10px;">
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="footer-column three columns" id="footer-widget-2">
-         <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
-           <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Our Packages</h3>
-           <div class="clear"></div>
-           <ul>
-             <li>
-               <a href="#" style="color:white">Honeymoon Packages</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Educational Packages</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Traditional packages</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Group Tour Packages</a>
-             </li>
-           </ul>
-         </div>
-       </div>
-       <div class="footer-column three columns" id="footer-widget-3" style="margin-bottom: -30px;">
-         <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
-           <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Quick Links</h3>
-           <div class="clear"></div>
-           <ul>
-             <li>
-               <a href="#" style="color:white">Home</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">About Us</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Gallery</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Getaway Tours</a>
-             </li>
-             <li>
-               <a href="#" style="color:white">Honeymoon</a>
-             </li>
-           </ul>
-         </div>
-       </div>
-       <div class="footer-column three columns" id="footer-widget-4">
-         <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
-           <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-             <h3 class="gdlr-widget-title" style="color:orange">Powered by</h3>
-             <img src="upload\favicon2.png" alt="" style="width: 120px; height: 120px; display: block;">
+                <!-- <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-facebook"></i></a>
+                          <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-youtube"></i></a>
+                          <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-linkedin"></i></a>
+                          <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-twitter"></i></a>
+                          <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-pinterest"></i></a>
+                          <a href="#" target="_blank" style="color:white; font-size:25px"><i
+                                  class="gdlr-icon  fa fa-instagram"></i></a> -->
+              </p>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="./images/20230510170343__fpdl.in__ai-generated-illustration-vacation-tropical-sunny-beach-beautiful-sand_441362-4056-removebg-preview.png" alt="globe image" style="height: 160px; margin-top: -30px; margin-left: -10px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-2">
+          <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+            <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Our Packages</h3>
+            <div class="clear"></div>
+            <ul>
+              <li>
+                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Honeymoon Packages</p>
+              </li>
+              <li>
+                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Educational Packages</p>
+              </li>
+              <li>
+                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Traditional packages</p>
+              </li>
+              <li>
+                <p style="color:white; padding-bottom:0px; margin-bottom:0px;">Group Tour Packages</p>
+              </li>
 
-             <!-- <footer style="position: relative;">
-                                <span
-                                    style="position: absolute; bottom: -250px; right: 40px; display: flex; align-items: center; color: white;">
-                                    Powered by <img src="upload\favicon2.png" alt=""
-                                        style="width: 80px; height: 80px; display: block;">
-                                </span>
-                            </footer> -->
+              <!-- <li>
+                        <a href="#" style="color:white">Educational Packages</a>
+                      </li>
+                      <li>
+                        <a href="#" style="color:white">Traditional packages</a>
+                      </li>
+                      <li>
+                        <a href="#" style="color:white">Group Tour Packages</a>
+                      </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-3" style="margin-bottom: -30px;">
+          <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+            <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 20px;">Quick Links</h3>
+            <div class="clear"></div>
+            <ul>
+              <li>
+                <a href="/" style="color:white">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html" style="color:white">About Us</a>
+              </li>
+              <li>
+                <a href="gallery.html" style="color:white">Gallery</a>
+              </li>
+              <li>
+                <a href="getaway-tours.html" style="color:white">Getaway Tours</a>
+              </li>
+              <li>
+                <a href="honeymoon.html" style="color:white">Honeymoon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-4">
+          <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+            <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+              <h3 class="gdlr-widget-title" style="color:orange">Powered by</h3>
+              <a href="https://tltechnologies.net/" target="_blank" rel="noopener noreferrer"><img src="upload\favicon2.png" alt="" style="width: 120px; height: 120px; display: block;"></a>
+
+              <!-- <footer style="position: relative;">
+                          <span
+                              style="position: absolute; bottom: -250px; right: 40px; display: flex; align-items: center; color: white;">
+                              Powered by <img src="upload\favicon2.png" alt=""
+                                  style="width: 80px; height: 80px; display: block;">
+                          </span>
+                      </footer> -->
 
 
-           </div>
-         </div>
-       </div>
+            </div>
+          </div>
+        </div>
 
-       <div class="clear"></div>
-     </div>
-
-
+        <div class="clear"></div>
+      </div>
 
 
-     <div class="copyright-wrapper">
-       <div class="copyright-container container">
-         <div class="copyright" style="text-align:center">
-           <span style="color:white; font-size:18px"> @2023 <a href="" style="color:orange">TL TECHNOLOGIES
-               PVT LTD</a> All Rights Reserved </span>
-         </div>
 
-       </div>
-   </footer>
-   <!-- <footer class="footer-wrapper">
+
+      <div class="copyright-wrapper">
+        <div class="copyright-container container">
+          <div class="copyright" style="text-align:center">
+            <span style="color:white; font-size:18px"> @2023 <a href="" style="color:orange">TL TECHNOLOGIES
+                PVT LTD</a> All Rights Reserved </span>
+          </div>
+
+        </div>
+    </footer>
+    <!-- <footer class="footer-wrapper">
             <div class="footer-container container">
                 <div class="footer-column three columns">
                     <div class="foot-book">
