@@ -354,331 +354,336 @@
 
         <!-- Above Sidebar Section-->
 
-        <!-- Sidebar With Content Section-->
-        <div class="with-sidebar-wrapper">
-          <section id="content-section-1">
-            <div class="section-container container">
-              <div class="room-item-wrapper type-classic" style="margin-bottom: 30px;">
-                <div class="room-item-holder ">
-                  <div class="clear"></div>
-
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/rameswaram.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Rameshwaram Holiday</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up-Madurai Airport/Railway Station </span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To-Trivandrum Airport/Railway Station </span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">6 Days/5 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction1()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown5" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination</strong>: Madurai-Rameshwaram-Kanyakumari-Kovalam-Trivandrum</span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                <!-- Sidebar With Content Section-->
+                <div class="with-sidebar-wrapper">
+                    <section id="content-section-1">
+                        <div class="section-container container">
+                            <div class="room-item-wrapper type-classic" style="margin-bottom: 30px;">
+                                <div class="room-item-holder ">
+                                    <div class="clear"></div>
+                                    
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/rameswaram.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Rameshwaram Holiday</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up-Madurai Airport/Railway Station </span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To-Trivandrum Airport/Railway Station </span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">6 Days/5 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction1()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown5" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination</strong>:<br> Madurai-Rameshwaram-Kanyakumari-Kovalam-Trivandrum</span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction1() {
-                              document.getElementById("myDropdown5").classList.toggle("show");
-                            }
+                                                        function myFunction1() {
+                                                          document.getElementById("myDropdown5").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/temple.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Temple Tour at Tamilnadu</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Madurai Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">4 Days/3 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction2()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown2" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination:</strong>Madurai-Rameshwaram-Kanyakumari<br> </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/temple.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Temple Tour at Tamilnadu</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Madurai Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">4 Days/3 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction2()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown2" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination:</strong><br>Madurai-Rameshwaram-Kanyakumari </span>
+                                                              
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction2() {
-                              document.getElementById("myDropdown2").classList.toggle("show");
-                            }
+                                                        function myFunction2() {
+                                                          document.getElementById("myDropdown2").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/chennai.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Temple Tour at Chennai</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Chennai Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Chennai Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction3()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown3" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination: </strong>Chennai - Kanchipuram - Mahabalipuram</span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/chennai.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Temple Tour at Chennai</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Chennai Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Chennai Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction3()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown3" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination: </strong><br>Chennai - Kanchipuram - Mahabalipuram</span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction3() {
-                              document.getElementById("myDropdown3").classList.toggle("show");
-                            }
+                                                        function myFunction3() {
+                                                          document.getElementById("myDropdown3").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="clear"></div>
-
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/periyar zoo.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Periyar Tour Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up -Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To -Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction4()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown4" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination :</strong> Cochin-Periyar<br> </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/periyar zoo.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Periyar Tour Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up -Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To -Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction4()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown4" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination :</strong><br> Cochin-Periyar </span>
+                                                                
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction4() {
-                              document.getElementById("myDropdown4").classList.toggle("show");
-                            }
+                                                        function myFunction4() {
+                                                          document.getElementById("myDropdown4").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/tree house.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Treehouse Tour Package Periyar</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up -Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction6()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown6" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination : </strong>Cochin - Periyar<br> </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/tree house.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Treehouse Tour Package Periyar</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up -Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">3 Days/2 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction6()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown6" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination : </strong><br>Cochin - Periyar </span>
+                                                                
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction6() {
-                              document.getElementById("myDropdown6").classList.toggle("show");
-                            }
+                                                        function myFunction6() {
+                                                          document.getElementById("myDropdown6").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/WAYANAD.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Wayanad Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Calicut Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Calicut Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">4 Days/3 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction7()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown7" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination : </strong> Calicut-Wayanad-Kanthapara waterfall- Edakkal caves <br> </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/WAYANAD.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Wayanad Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Calicut Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To -  Calicut Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">4 Days/3 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction7()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown7" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination : </strong><br> Calicut-Wayanad-Kanthapara waterfall- Edakkal caves </span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
                             function myFunction7() {
                               document.getElementById("myDropdown7").classList.toggle("show");
@@ -708,149 +713,151 @@
                   </div>
                   <div class="clear"></div>
 
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/kodaikanal.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Kodaikkanal Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">8 Days/7 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction8()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown8" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination :</strong>Munnar-Thekkady-Kodaikkanal-Thekkady-Kumarakom<br> </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/kodaikanal.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Kodaikkanal Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">8 Days/7 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction8()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown8" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination :</strong><br>Munnar-Thekkady-Kodaikkanal-Thekkady-Kumarakom </span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction8() {
-                              document.getElementById("myDropdown8").classList.toggle("show");
-                            }
+                                                        function myFunction8() {
+                                                          document.getElementById("myDropdown8").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/alapuzzha.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Kerala House Boat Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunction9()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdown9" class="dropdown-content">
-                              <br>
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination :</strong> Cochin - Alleppey - <br> Kumarakom </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/alapuzzha.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Kerala House Boat Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 days and 6 nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunction9()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdown9" class="dropdown-content">
+                                                          <br>
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination :</strong> <br> Cochin - Alleppey - Kumarakom </span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunction9() {
-                              document.getElementById("myDropdown9").classList.toggle("show");
-                            }
+                                                        function myFunction9() {
+                                                          document.getElementById("myDropdown9").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/ooty.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Ooty Kumarakom Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">9 Days/8 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunctionooty()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdownooty" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"> <strong>Destination :</strong>Cochin-Ooty-Coonoor-Kodaikanal-Munnar-Thekkady-Kumarakom-Kochi </span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/ooty.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Ooty Kumarakom Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">9 Days/8 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunctionooty()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdownooty" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"> <strong>Destination :</strong><br>Cochin-Ooty-Coonoor-Kodaikanal-Munnar-Thekkady-Kumarakom-Kochi </span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
                             function myFunctionooty() {
                               document.getElementById("myDropdownooty").classList.toggle("show");
@@ -880,93 +887,94 @@
                   </div>
                   <div class="clear"></div>
 
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/Munnar.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Kerala Holiday Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">8 Days/7 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunctionKerala()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdownKerala" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination :</strong>Cochin-Munnar-Thekkady-Alleppey-Kovalam</span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room"> 
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/Munnar.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Kerala Holiday Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">8 Days/7 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunctionKerala()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <i class="fa-solid fa-chevron-down" style="pointer-events: none;"></i></div>
+                                                        <div id="myDropdownKerala" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination :</strong><br>Cochin-Munnar-Thekkady-<br>Alleppey-Kovalam</span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
-                            function myFunctionKerala() {
-                              document.getElementById("myDropdownKerala").classList.toggle("show");
-                            }
+                                                        function myFunctionKerala() {
+                                                          document.getElementById("myDropdownKerala").classList.toggle("show");
+                                                        }
+                                                        
+                                                        // Close the dropdown if the user clicks outside of it
+                                                        window.onclick = function(event) {
+                                                          if (!event.target.matches('.dropbtn')) {
+                                                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                            var i;
+                                                            for (i = 0; i < dropdowns.length; i++) {
+                                                              var openDropdown = dropdowns[i];
+                                                              if (openDropdown.classList.contains('show')) {
+                                                                openDropdown.classList.remove('show');
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
-                            // Close the dropdown if the user clicks outside of it
-                            window.onclick = function(event) {
-                              if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                  var openDropdown = dropdowns[i];
-                                  if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                                  }
-                                }
-                              }
-                            }
-                          </script>
-                          <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
-                            <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;" class="book-now-button">Book Now</a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="four columns">
-                    <div class="gdlr-item gdlr-room-item gdlr-classic-room">
-                      <div class="gdlr-ux gdlr-classic-room-ux package-box">
-                        <div class="gdlr-room-thumbnail">
-                          <img src="images/Kanyakumari.png" alt="" width="700" height="400" class="img">
-                        </div>
-                        <h3 class="package-heading">Kerala Kanyakumari Package</h3>
-                        <div class="package-body">
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
-                          <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 Days/6 Nights</span></div>
-
-                          <div class="clear"></div>
-
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
-
-                          <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
-                            <div onclick="myFunctionKanyakumari()" class="dropbtn" style="font-size: 14px;">Itinerary Guide <i class="fa-solid fa-chevron-down"></i></div>
-                            <div id="myDropdownKanyakumari" class="dropdown-content">
-                              <br>
-
-                              <p style="font-size: 13px;">
-                                <span class="itinerary-components"><strong>Destination :</strong> Cochin-Munnar-Thekkady-Alleppey-Kovalam-Kanyakumari- <br> Trivandrum</span>
-
-                              </p>
-                            </div>
-                          </div>
-                          <script>
-                            /* When the user clicks on the button, 
+                                                        </script>
+                                                    <div style="position: absolute; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 10px;">
+                                                        <a href="https://booking.keraladrives.com/" target="_blank" style="color: white;"  class="book-now-button">Book Now</a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="four columns">
+                                        <div class="gdlr-item gdlr-room-item gdlr-classic-room">
+                                            <div class="gdlr-ux gdlr-classic-room-ux package-box">
+                                                <div class="gdlr-room-thumbnail">
+                                                    <img src="images/Kanyakumari.png" alt="" width="700" height="400" class="img">
+                                                </div>
+                                                <h3 class="package-heading">Kerala Kanyakumari Package</h3>
+                                                <div class="package-body">
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Pick Up - Cochin Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/Location.png" alt="location icon" class="package-icon"> &nbsp; <span class="gdlr-head">Drop To - Trivandrum Airport/Railway Station</span></div>
+                                                    <div class="gdlr-room-info"><img src="images/time_circle.png" alt="time icon" class="package-icon"> &nbsp; <span class="gdlr-head">7 Days/6 Nights</span></div>
+                                                    
+                                                    <div class="clear"></div>
+                                                
+                                                </div>
+                                                <div style="display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; position: relative;">
+                                                    
+                                                    <div class="dropdown" style="padding: 10px 10px 10px 5px; color: #454545;">
+                                                        <div onclick="myFunctionKanyakumari()" class="dropbtn" style="font-size: 14px;">Itinerary Guide  <span class="fa-solid fa-chevron-down" style="pointer-events: none;" ></span></div>
+                                                        <div id="myDropdownKanyakumari" class="dropdown-content">
+                                                            <br>
+                                                            
+                                                            <p style="font-size: 13px;"> 
+                                                                <span class="itinerary-components" style="margin-left: 0px;"><strong>Destination :</strong> <br>Cochin-Munnar-Thekkady-Alleppey-Kovalam-Kanyakumari-Trivandrum</span>
+                                                               
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        /* When the user clicks on the button, 
                                                         toggle between hiding and showing the dropdown content */
                             function myFunctionKanyakumari() {
                               document.getElementById("myDropdownKanyakumari").classList.toggle("show");
