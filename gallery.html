@@ -149,7 +149,9 @@
       z-index: -1;
 
     }
-
+.gridTitle{
+  color: black; font-size: 28px; font-weight: bold; text-transform: uppercase; margin: 0px 15px; display: block; letter-spacing: 3px;
+}
     #button-19:main,
     #button-19:focus {
       user-select: auto;
@@ -206,6 +208,8 @@
     }
   </style>
 
+
+
   <style>
     .main {
       display: flex;
@@ -232,7 +236,7 @@
     }
 
     .main .single-column {
-      animation: var(--animation, none) 16s infinite linear;
+    animation: var(--animation, none) 16s infinite linear; 
     }
 
     .main .single-column:hover {
@@ -248,6 +252,11 @@
       to {
         -webkit-transform: translateY(var(--direction, -50%));
         transform: translateY(var(--direction, -50%));
+      }
+    }
+    @media  (max-width:400px) {
+      .gridTitle{
+        font-size: 10px;
       }
     }
   </style>
@@ -467,7 +476,7 @@
 
        <div class="gdlr-page-title-container container">
         <center align="center">
-              <h1 class="gdlr-page-title" style="color: black; font-size: 28px; font-weight: bold; text-transform: uppercase; margin: 0px 15px; display: block; letter-spacing: 3px;">
+              <h1 class="gdlr-page-title gridTitle">
                  Celebrating Our Clients: Incredible Travel Stories</h1>
         </center>
        </div>
@@ -564,7 +573,7 @@
           <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
             <div style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column;">
               <h3 class="gdlr-widget-title" style="color:orange; margin-bottom: 15px; font-family:Merriweather;">
-                Our Details</h3>
+                Contact Us</h3>
               <p style="color:white; padding-bottom:0px; margin-bottom:0px; margin-top: 3px;">
                 <strong>Address:</strong><br> S.M.M Vetturoad, Kazhakuttom P.O., Trivandrum, Kerala - 695582
               </p><br>
